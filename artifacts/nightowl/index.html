@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>NightOwl Sleep Calculator | Bedtime, Nap, Caffeine & Jet Lag Tools</title>
+  <link rel="canonical" href="https://nightowlsleepcalc.com/" />
+  <meta name="description" content="NightOwl helps you calculate the best bedtime, wake time, nap, caffeine cutoff, and jet lag plan with sleep cycles, wake windows, and sleep latency settings.">
+  
+  <meta property="og:title" content="NightOwl Sleep Calculator" />
+  <meta property="og:description" content="Calculate bedtime, wake time, naps, caffeine cutoff, and jet lag timing with personalized sleep cycle planning from NightOwl." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NightOwl Sleep Calc" />
+  <meta property="og:url" content="https://nightowlsleepcalc.com/" />
+  <meta property="og:image" content="https://nightowlsleepcalc.com/opengraph.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@nightowlsleepcalc" />
+  <meta name="twitter:title" content="NightOwl Sleep Calculator" />
+  <meta name="twitter:description" content="Calculate bedtime, wake time, naps, caffeine cutoff, and jet lag timing with personalized sleep cycle planning from NightOwl." />
+  <meta name="twitter:image" content="https://nightowlsleepcalc.com/opengraph.jpg" />
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="preload" as="image" href="/attached_assets/NightOwl_logo2_1768776420360.png">
+  <link rel="preload" as="image" href="/attached_assets/owl1_1767300759408.png">
+  <link rel="preload" as="image" href="/attached_assets/owl2_1767300759408.png">
+  <link rel="preload" as="image" href="/attached_assets/generated_images/cute_3d_pilot_owl_icon.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "#website",
+        "url": "https://nightowlsleepcalc.com/",
+        "name": "NightOwl Sleep Calc",
+        "alternateName": "NightOwl",
+        "description": "NightOwl helps you calculate the best bedtime, wake time, nap, caffeine cutoff, and jet lag plan with sleep cycles, wake windows, and sleep latency settings.",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "#org"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "#org",
+        "name": "NightOwl Sleep Calc",
+        "url": "https://nightowlsleepcalc.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nightowlsleepcalc.com/attached_assets/NightOwl_logo2_1768776420360.png"
+        },
+        "sameAs": [
+          "https://nightowlsleepcalc.com/"
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "#app",
+        "name": "NightOwl Sleep Calculator",
+        "url": "https://nightowlsleepcalc.com/",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Any",
+        "isAccessibleForFree": true,
+        "browserRequirements": "Requires JavaScript",
+        "description": "A free sleep calculator that suggests bedtimes, wake times, naps, caffeine cutoff times, and jet lag plans using sleep cycles, sleep latency, and wake windows.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@id": "#org"
+        },
+        "about": [
+          "Sleep cycles",
+          "Bedtime calculator",
+          "Wake time calculator",
+          "Nap calculator",
+          "Caffeine cutoff",
+          "Jet lag planner"
+        ],
+        "keywords": "sleep calculator, bedtime calculator, wake time calculator, nap calculator, caffeine cutoff, jet lag planner, sleep cycles, wake window"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many sleep cycles do I need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most adults feel best with about 5–6 full sleep cycles, which is roughly 7.5–9 hours of sleep time (plus the time it takes to fall asleep). Your ideal number can vary based on your schedule, recent sleep debt, and how you feel in the morning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does the calculator use 90-minute cycles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A full sleep cycle (light sleep → deeper sleep → REM) often averages around 90 minutes, but it can be shorter or longer depending on the person and the night. This calculator lets you adjust cycle length so you can match what works best for you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's a normal sleep latency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sleep latency is how long it takes you to fall asleep after you get in bed. Many people are around 10–20 minutes, but stress, caffeine, and screens can push it longer. If you often take 30+ minutes, try increasing the latency setting to make the recommendations more accurate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it better to wake at the end of a sleep cycle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Waking near the end of a cycle may reduce sleep inertia (that groggy feeling), because you're less likely to wake from deep sleep. It's not perfect—sleep stages aren't a stopwatch—but cycle-based planning is a useful starting point."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a wake window?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A wake window is a small time range (like 10–15 minutes) around your target bedtime or wake time. It adds flexibility so you can aim for a window instead of a single exact minute, while keeping the overall cycle timing similar."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <meta name="google-adsense-account" content="ca-pub-2078168053570687">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2078168053570687"
+     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+</head>
+<body onload="createStars()">
+  <div class="stars-container" id="starsContainer"></div>
+  
+  <nav class="top-nav">
+    <a href="/" class="nav-brand">
+      <img src="/attached_assets/NightOwl_logo2_1768776420360.png" class="nav-logo-img" alt="NightOwl Logo">
+      <span class="nav-brand-name">NightOwl</span>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-link active">Calculator</a>
+      <a href="/sleep-calculator/" class="nav-link">Sleep Guide</a>
+      <a href="/sleep-cycle-calculator/" class="nav-link">Sleep Cycles</a>
+      <a href="/power-nap-calculator/" class="nav-link">Nap Guide</a>
+      <a href="/jet-lag-planner/" class="nav-link">Jet Lag Guide</a>
+      <a href="/caffeine-calculator/" class="nav-link">Caffeine Guide</a>
+    </div>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </nav>
+
+  <div class="container" style="padding-top: 60px;">
+    <header>
+      <div class="brand">
+        <div class="logo">
+          <img src="/attached_assets/NightOwl_logo2_1768776420360.png" class="logo-img" alt="NightOwl Logo">
+        </div><span class="brand-name">NightOwl</span>
+      </div>
+      <h1 class="title">Sleep Cycle Calculator</h1>
+      <p class="subtitle">Bedtimes + wake windows based on 90-minute cycles</p>
+    </header>
+
+    <div class="ad-space">
+      <div class="ad-placeholder">
+        <span class="ad-placeholder-text">Advertisement</span>
+      </div>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2078168053570687"
+           crossorigin="anonymous"></script>
+      <!-- NightOwl Horizontal ad -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-2078168053570687"
+           data-ad-slot="7830640476"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- App Mode Switch -->
+    <div class="app-mode-switch">
+      <button class="app-mode-btn active" data-app-mode="calculator">Sleep Calculator</button>
+      <button class="app-mode-btn" data-app-mode="nap">Nap Calculator</button>
+      <button class="app-mode-btn" data-app-mode="jetlag">Jet Lag Planner</button>
+      <button class="app-mode-btn" data-app-mode="caffeine">Caffeine Cutoff</button>
+      <button class="app-mode-btn" data-app-mode="sleep-screen">Sleep Screen</button>
+    </div>
+
+    <div id="sleepCalcMode">
+    <div class="mode-tabs">
+      <button class="mode-btn active" data-mode="wake">
+        <span>⏰</span> Wake up at...
+      </button>
+      <button class="mode-btn" data-mode="sleep">
+        <span>🛏️</span> Bedtime now
+      </button>
+    </div>
+
+    <div class="main-content">
+      <div class="settings-toggle">
+        <button type="button" class="settings-toggle-btn" id="toggleSettings">Settings</button>
+      </div>
+
+      <div class="settings-grid" id="settingsGrid">
+        <div class="setting-group">
+          <label class="setting-label">Sleep Latency</label>
+          <input type="range" id="latency" min="0" max="60" value="10">
+          <div class="setting-value"><span id="latencyValue">10</span> min</div>
+        </div>
+        <div class="setting-group">
+          <label class="setting-label">Cycle Length</label>
+          <input type="range" id="cycleLength" min="80" max="110" value="90">
+          <div class="setting-value"><span id="cycleLengthValue">90</span> min</div>
+        </div>
+        <div class="setting-group">
+          <label class="setting-label">Wake Window</label>
+          <input type="range" id="wakeWindow" min="0" max="30" value="10">
+          <div class="setting-value"><span id="wakeWindowValue">10</span> min</div>
+        </div>
+        <div class="setting-group">
+          <label class="setting-label">Time Format</label>
+          <div class="time-format-toggle">
+            <div class="toggle-switch active" id="timeFormatToggle">
+              <div class="toggle-option active" data-format="12">12h</div>
+              <div class="toggle-option" data-format="24">24h</div>
+            </div>
+          </div>
+        </div>
+        <div class="setting-group">
+          <label class="setting-label">Meme Mode</label>
+          <div id="memeModeToggle" class="meme-toggle-container">
+            <div class="meme-toggle-thumb"></div>
+            <span class="meme-toggle-label">Normal</span>
+          </div>
+        </div>
+      </div>
+
+      <label class="label" id="timeLabel">I want to wake up at...</label>
+
+      <div class="time-picker-container">
+        <div class="time-picker" id="timePicker">
+          <div class="time-column" id="hourColumn" tabindex="0">
+            <div class="time-column-faded" id="hourAbove">12</div>
+            <div class="time-column-selected" id="hourSelected">01</div>
+            <div class="time-column-faded" id="hourBelow">02</div>
+            <div class="time-column-highlight"></div>
+          </div>
+          
+          <div class="time-column-separator">:</div>
+          
+          <div class="time-column" id="minuteColumn" tabindex="0">
+            <div class="time-column-faded" id="minuteAbove">59</div>
+            <div class="time-column-selected" id="minuteSelected">00</div>
+            <div class="time-column-faded" id="minuteBelow">01</div>
+            <div class="time-column-highlight"></div>
+          </div>
+          
+          <div class="time-column" id="periodColumn" tabindex="0">
+            <div class="time-column-faded" id="periodAbove">PM</div>
+            <div class="time-column-selected" id="periodSelected">AM</div>
+            <div class="time-column-faded" id="periodBelow">PM</div>
+            <div class="time-column-highlight"></div>
+          </div>
+
+          <div class="owl-perch" id="owlPerch">
+            <img src="/attached_assets/owl1_1767300759408.png" id="owlImg" alt="Owl" />
+          </div>
+        </div>
+      </div>
+
+      <div class="tomorrow-mode" id="tomorrowModeContainer">
+        <div class="tm-label">Tomorrow's Goal</div>
+        <div class="tm-buttons" role="tablist" aria-label="Tomorrow Mode">
+          <button class="tm-btn active" data-tm="sharp" type="button" data-testid="button-tm-sharp">🎯 Need to be sharp</button>
+          <button class="tm-btn" data-tm="survive" type="button" data-testid="button-tm-survive">☕ Just survive</button>
+          <button class="tm-btn" data-tm="recover" type="button" data-testid="button-tm-recover">🛌 Recovery day</button>
+        </div>
+        <div id="tmNote" class="tm-note" hidden></div>
+      </div>
+
+      <div class="results" id="results">
+        <div class="results-label" id="resultsLabel">Go to bed at...</div>
+        <div class="results-list" id="resultsList"></div>
+        
+        <div class="results-buttons">
+          <button class="share-btn" id="shareBtn" data-testid="button-share-link">🔗 Share Link</button>
+          <button class="ticket-toggle-btn" id="ticketToggle" data-testid="button-create-ticket">📱 Sleep Ticket</button>
+        </div>
+
+        <div id="shareCard" class="share-card-preview" style="display: none;">
+          <div class="share-card-header">
+            <img src="/attached_assets/NightOwl_logo2_1768776420360.png" class="nav-logo-img" alt="NightOwl Logo" style="height: 20px;">
+            <span class="share-card-app-name">NightOwl</span>
+          </div>
+          <div class="share-card-content">
+            <div id="shareCardTitle" class="share-card-title">Tonight's Plan</div>
+            <div id="shareCardBody" class="share-card-body"></div>
+          </div>
+          <div class="share-card-actions">
+            <button class="calendar-btn" id="calendarBtn">📅 Add to Calendar</button>
+          </div>
+          <div class="share-card-footer">
+            nightowlsleepcalc.com
+          </div>
+        </div>
+      </div>
+
+      <div class="learn-more-block">
+        <h3>Want to master your sleep schedule?</h3>
+        <p>Dive deeper into the science of sleep cycles, REM stages, and how to wake up refreshed.</p>
+        <a href="/sleep-calculator/" class="learn-more-btn">Read the Full Sleep Guide →</a>
+      </div>
+
+      <h3 style="margin: 40px 0 20px; font-size: 18px; color: #e2e8f0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">Quick Reference</h3>
+
+      <div class="seo-content-moat">
+        <button type="button" class="info-toggle" id="infoToggle">
+          <span class="info-title">Sleep Calculator: Find the best time to go to bed or wake up</span>
+          <span class="info-arrow">▼</span>
+        </button>
+        <div class="info-section" id="infoSection" style="display: none;">
+          <p>NightOwl Sleep Calc is a free sleep calculator that helps you plan bedtimes and wake-up times using sleep cycles, sleep latency (how long it takes you to fall asleep), and a wake window (a small flexible range instead of one exact minute). If you’ve ever woken up groggy even after “enough” hours of sleep, timing your wake-up closer to the end of a cycle can help.</p>
+          <p>This isn’t a medical tool—just practical sleep math. Pick a wake-up time to get recommended bedtimes, or choose “Bedtime now” to see the best wake-up windows based on your settings. Adjust the sliders to match your real-life routine, and use the wake window to give yourself a little breathing room.</p>
+          
+          <h3 class="inner-section-title">How to use this sleep calculator</h3>
+          <ol class="content-list">
+            <li><strong>Choose a mode:</strong> “Wake up at…” for bedtime suggestions, or “Bedtime now” for wake-up suggestions.</li>
+            <li><strong>Set your Tomorrow Goal:</strong> Pick a goal (Sharp, Survive, or Recover) to get a tailored cycle recommendation and nap timing.</li>
+            <li><strong>Set your sleep latency:</strong> how long you usually take to fall asleep (many people are around 10–20 minutes).</li>
+            <li><strong>Set cycle length:</strong> 90 minutes is typical, but you can adjust if you tend to run shorter or longer.</li>
+            <li><strong>Pick a wake window:</strong> a small range (like 10–15 minutes) so you can aim for a window, not a single exact time.</li>
+            <li><strong>Pick an option:</strong> choose the cycle count that fits your schedule, then copy or share the plan.</li>
+          </ol>
+        </div>
+
+        <button type="button" class="info-toggle" id="infoToggle2">
+          <span class="info-title">Examples: Real-life sleep planning scenarios</span>
+          <span class="info-arrow">▼</span>
+        </button>
+        <div class="info-section" id="infoSection2" style="display: none;">
+          <p>These common scenarios show how a sleep calculator can help you plan around real life. Your results may differ based on settings, but the idea is the same: plan sleep in full cycles and account for the time it takes to fall asleep.</p>
+          <div class="example-grid-simple">
+            <div class="example-item">
+              <h4>If you need to wake up early</h4>
+              <p>Select your wake-up time in “Wake up at…” mode. Most people feel best with about <strong>5–6 cycles</strong>, but if you’re short on time, 4 cycles can be a workable minimum.</p>
+            </div>
+            <div class="example-item">
+              <h4>If you’re going to bed now</h4>
+              <p>Tap “Bedtime now” to use the current time. Picking a wake time near the end of a cycle can reduce <strong>sleep inertia</strong>—that heavy, foggy feeling.</p>
+            </div>
+            <div class="example-item">
+              <h4>If you only have limited time</h4>
+              <p>Choose a lower cycle count. Even if you can’t get a full night, waking closer to a cycle boundary may feel better than waking from deep sleep.</p>
+            </div>
+            <div class="example-item">
+              <h4>If you’re always "in bed" longer</h4>
+              <p>Increase sleep latency to match your routine. This makes recommendations more realistic if you tend to lie awake or wind down for a while.</p>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="info-toggle" id="infoToggle3">
+          <span class="info-title">Sleep cycles, sleep latency, and wake windows explained</span>
+          <span class="info-arrow">▼</span>
+        </button>
+        <div class="info-section" id="infoSection3" style="display: none;">
+          <h4>What is a sleep cycle?</h4>
+          <p>Sleep isn’t one steady state—your brain moves through repeating stages, including lighter sleep, deeper sleep, and REM. A full sleep cycle often averages around <strong>90 minutes</strong>, though it varies by person and by night.</p>
+          <h4>What is sleep latency?</h4>
+          <p>Sleep latency is the time it takes to fall asleep after you get into bed. Many people are around 10–20 minutes, but stress, caffeine, late screens, or irregular schedules can increase it.</p>
+          <h4>What is a wake window?</h4>
+          <p>A wake window is a small flexible range around a recommended time (for example, 10–15 minutes). It adds flexibility while staying close to an end-of-cycle wake-up.</p>
+        </div>
+
+        <button type="button" class="info-toggle" id="infoToggle4">
+          <span class="info-title">Sleep Calculator FAQ</span>
+          <span class="info-arrow">▼</span>
+        </button>
+        <div class="info-section" id="infoSection4" style="display: none;">
+          <div class="faq-item">
+            <h4 class="faq-question">How many sleep cycles do I need?</h4>
+            <p>Many adults feel best with about 5–6 full cycles, which is roughly 7.5–9 hours of sleep time. 4 cycles can be a workable minimum when short on time.</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question">Why 90-minute cycles?</h4>
+            <p>It's a typical average, but if your results consistently feel early or late, try adjusting cycle length by a few minutes in settings.</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question">What is sleep inertia?</h4>
+            <p>The groggy, heavy feeling after waking—especially from deep sleep. Timing your alarm closer to a cycle boundary can make waking feel smoother.</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question">Can this replace medical advice?</h4>
+            <p>No. This tool is educational. If you have persistent insomnia or severe daytime sleepiness, consider talking with a clinician.</p>
+          </div>
+        </div>
+
+        <button type="button" class="info-toggle" id="infoToggle5">
+          <span class="info-title">Fun Features Explained</span>
+          <span class="info-arrow">▼</span>
+        </button>
+        <div class="info-section" id="infoSection5" style="display: none;">
+          <div class="faq-item">
+            <h4 class="faq-question">🎭 What is Meme Mode?</h4>
+            <p>Meme Mode swaps out practical sleep advice for playful roasts and humor based on your sleep schedule. It's a fun way to see your sleep habits in a new light—whether you're a "chaotic night owl" or an "overachiever early bird." Toggle it on in Settings to add some personality to your results.</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question">🎫 What is a Sleep Ticket?</h4>
+            <p>A Sleep Ticket is a shareable graphic showing your sleep personality, bedtime, and wake time—perfect for Instagram Stories. After calculating your sleep times, pick one of the three results, then tap "Share Sleep Ticket" to generate a personalized card with your sleep type (like Night Owl, Early Bird, or Cycle Optimizer), a fun quote, and optional challenge stickers to engage your friends.</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question">🎯 What are Challenge stickers?</h4>
+            <p>Challenge stickers are interactive prompts you can add to your Sleep Ticket—things like "Post yours 👇" or "Roast my schedule." They're designed to spark engagement when you share your ticket on social media. Tap the Challenge button in the Sleep Ticket modal to cycle through different options.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div> <!-- Close sleepCalcMode -->
+
+  <!-- Nap Calculator Mode -->
+  <div id="napMode" style="display: none;">
+    <div class="main-content">
+      <div style="max-width: 760px; margin: 0 auto;">
+        <p class="jetlag-intro">Need a quick reset? Pick a nap type to get a recommended wake window based on the <strong>current time</strong>.</p>
+        
+        <div class="nap-controls" style="margin-top: 30px;">
+          <button class="nap-btn" data-nap="15">Coffee Nap (15m)</button>
+          <button class="nap-btn" data-nap="20">Power Nap (20m)</button>
+          <button class="nap-btn" data-nap="90">Full Cycle (90m)</button>
+        </div>
+
+        <div class="nap-output" id="napOutput" aria-live="polite" style="margin-top: 30px; margin-bottom: 30px;">
+          Select a nap to see your wake window.
+        </div>
+        
+        <div class="info-section" style="display: block; margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+          <h3 class="inner-section-title">Quick Nap Guide</h3>
+          <div class="example-grid-simple">
+             <div class="example-item">
+               <h4>Coffee Nap (15m)</h4>
+               <p>Drink coffee, then nap immediately. Wake up right as the caffeine kicks in.</p>
+             </div>
+             <div class="example-item">
+               <h4>Power Nap (20m)</h4>
+               <p>Boosts alertness and motor performance without entering deep sleep (no grogginess).</p>
+             </div>
+             <div class="example-item">
+               <h4>Full Cycle (90m)</h4>
+               <p>Includes all sleep stages (including REM). Best for creativity and emotional reset, but takes longer to wake up from.</p>
+             </div>
+          </div>
+        </div>
+
+        <div class="learn-more-block">
+          <h3>Napping is an art form</h3>
+          <p>Learn why some naps leave you groggy and how to use coffee naps for maximum energy.</p>
+          <a href="/power-nap-calculator/" class="learn-more-btn">Read the Nap Guide →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jet Lag Planner Mode -->
+  <div id="jetLagMode" style="display: none;">
+    <div class="main-content">
+      <div style="max-width: 760px; margin: 0 auto;">
+      <p class="jetlag-intro">Enter your flight details to get a personalized sleep schedule to beat jet lag.</p>
+      
+      <div id="segmentList" class="segment-list">
+        <!-- Segments added dynamically -->
+      </div>
+
+      <button id="addSegmentBtn" class="add-segment-btn">+ Add Flight Segment</button>
+
+      <div class="jetlag-options">
+        <div class="option-row">
+          <label>Can sleep on plane?</label>
+          <div class="radio-toggle-group">
+            <input type="radio" id="planeSleep_yes" name="planeSleep" value="yes" checked>
+            <label for="planeSleep_yes">Yes</label>
+            <input type="radio" id="planeSleep_no" name="planeSleep" value="no">
+            <label for="planeSleep_no">No</label>
+          </div>
+        </div>
+        <div class="option-row">
+          <label>Strategy</label>
+          <div class="radio-toggle-group">
+            <input type="radio" id="strategy_cycles" name="strategy" value="cycles" checked>
+            <label for="strategy_cycles">Cycles</label>
+            <input type="radio" id="strategy_naps" name="strategy" value="naps">
+            <label for="strategy_naps">Naps</label>
+          </div>
+        </div>
+      </div>
+
+      <button id="generateJetLagBtn" class="generate-btn">Generate Plan ✈️</button>
+
+      <div id="jetLagResults" style="display: none;">
+        <div class="timeline-container" id="jetLagTimeline"></div>
+        
+        <div class="results-buttons">
+          <button class="share-btn" id="jetLagShareBtn">🔗 Share Plan</button>
+          <button class="ticket-toggle-btn" id="jetLagTicketBtn">📱 Jet Lag Ticket</button>
+        </div>
+      </div>
+
+      <div class="learn-more-block">
+        <h3>Master time zone travel</h3>
+        <p>Get pro tips on light exposure, melatonin timing, and strategic naps to beat jet lag.</p>
+        <a href="/jet-lag-planner/" class="learn-more-btn">Read the Jet Lag Guide →</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Caffeine Mode -->
+  <div id="caffeineMode" style="display: none;">
+    <div class="main-content">
+      <div style="max-width: 760px; margin: 0 auto;">
+        <p class="jetlag-intro">Calculate the latest time you should drink coffee and other caffeinated drinks to avoid ruining your sleep.</p>
+
+        <div class="settings-grid show" style="margin-bottom: 24px;">
+          <div class="setting-group">
+            <label class="setting-label">I usually go to bed at...</label>
+            <input type="time" id="caffeineBedtime" class="input-field" value="23:00" style="font-size: 18px;">
+          </div>
+          
+          <div class="setting-group">
+            <label class="setting-label">Caffeine Source</label>
+            <select id="caffeineSource" class="input-field">
+              <option value="95">Coffee (8oz) - 95mg</option>
+              <option value="64">Espresso (Double) - 64mg</option>
+              <option value="47">Black Tea (8oz) - 47mg</option>
+              <option value="30">Green Tea (8oz) - 30mg</option>
+              <option value="111">Energy Drink (12oz) - 111mg</option>
+              <option value="34">Cola (12oz) - 34mg</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="calcCaffeineBtn" class="generate-btn">Calculate Cutoff Time ☕</button>
+
+        <div id="caffeineResults" style="display: none; margin-top: 32px; text-align: center;">
+          <div class="result-card selected" style="max-width: 500px; margin: 0 auto;">
+            <div class="result-time" id="caffeineCutoffTime">--:-- PM</div>
+            <div class="result-window" id="caffeineResultLabel" style="color: #fbbf24;">Latest Coffee Time</div>
+            <div class="result-explanation">
+              Stop caffeine by this time to ensure <span id="caffeineLeft">less than 25mg</span> is left in your system by bedtime.
+            </div>
+          </div>
+          
+          <div style="margin-top: 24px; font-size: 14px; color: #94a3b8; line-height: 1.6;">
+            <p><strong>Why?</strong> Caffeine has a half-life of about 5 hours. If you drink it later, it blocks your adenosine receptors, making it harder to fall into deep sleep.</p>
+          </div>
+        </div>
+
+        <div class="learn-more-block">
+          <h3>The science of caffeine & sleep</h3>
+          <p>Learn exactly how caffeine half-life works and why your afternoon coffee might be sabotaging your deep sleep.</p>
+          <a href="/caffeine-calculator/" class="learn-more-btn">Read the Caffeine Guide →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="embed-section">
+    <button class="embed-toggle-btn" id="embedToggle" data-testid="button-embed-calculator">
+      <span>&lt;/&gt;</span> Embed this Calculator
+    </button>
+
+    <div id="embedPanel" class="embed-panel" style="display: none;">
+      <div class="embed-panel-header">
+        <strong>Embed this Calculator</strong>
+        <button class="embed-close" id="embedClose">&times;</button>
+      </div>
+      <p>Copy and paste this code into your website:</p>
+      <div class="embed-code-wrapper">
+        <code id="embedCode">&lt;iframe src="https://nightowlsleepcalc.com/embed/" width="100%" height="600" frameborder="0"&gt;&lt;/iframe&gt;</code>
+        <button class="copy-embed-btn" id="copyEmbedBtn">Copy Code</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/about/">About</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div class="footer-copyright">&copy; <span id="year"></span> NightOwl Sleep Calc. All rights reserved.</div>
+    <div class="footer-disclaimer">Educational tool only — not medical advice.</div>
+  </footer>
+
+  <!-- Sleep Ticket Modal -->
+  <div id="ticketModal" class="ticket-modal" style="display: none;">
+    <div class="ticket-modal-content">
+      <button class="ticket-modal-close" id="ticketModalClose">&times;</button>
+      <h2 class="ticket-modal-title">Your Sleep Ticket</h2>
+      <p class="ticket-modal-subtitle" id="ticketSubtitle">Share your sleep personality on Instagram Stories</p>
+      
+      <div class="ticket-preview-container">
+        <div id="ticketPreview" class="ticket-preview">
+          <div class="ticket-bg" id="ticketBg"></div>
+          <div class="ticket-content">
+            <div class="ticket-personality">
+              <img id="ticketIcon" class="ticket-icon" src="" alt="Personality icon" />
+              <span id="ticketPersonalityName" class="ticket-personality-name"></span>
+            </div>
+            <div id="ticketQuote" class="ticket-quote"></div>
+            <div class="ticket-times">
+              <div class="ticket-time-row">
+                <span class="ticket-time-label" id="ticketBedtimeLabel">Bedtime</span>
+                <span id="ticketBedtime" class="ticket-time-value"></span>
+              </div>
+              <div class="ticket-time-row">
+                <span class="ticket-time-label">Wake up</span>
+                <span id="ticketWakeTime" class="ticket-time-value"></span>
+              </div>
+            </div>
+            <div id="ticketCycles" class="ticket-cycles"></div>
+            <div id="ticketChallenge" class="ticket-challenge" style="display: none;"></div>
+            <div class="ticket-branding">
+              <img src="/attached_assets/NightOwl_logo2_1768776420360.png" class="ticket-logo-img" alt="NightOwl Logo">
+              <span class="ticket-url">nightowlsleepcalc.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="ticket-actions">
+        <button class="ticket-btn ticket-btn-secondary" id="regenerateQuoteBtn"><span class="btn-icon">🔄</span><span class="btn-text">New Quote</span></button>
+        <button class="ticket-btn ticket-btn-secondary" id="challengeBtn"><span class="btn-icon">🎯</span><span class="btn-text">Challenge</span></button>
+        <button class="ticket-btn ticket-btn-primary" id="downloadTicketBtn"><span class="btn-icon">📱</span><span class="btn-text">Download</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div id="sleepScreenOverlay" class="sleep-screen-overlay" style="display: none;">
+    <video id="sleepScreenVideo" loop playsinline>
+      <source src="/attached_assets/French_Night_-_HD_720p_1768950137351.mov" type="video/quicktime">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
