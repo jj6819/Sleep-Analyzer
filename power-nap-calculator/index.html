@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Nap Calculator: Coffee Nap, Power Nap, Full Cycle | NightOwl</title>
+  <link rel="canonical" href="https://nightowlsleepcalc.com/power-nap-calculator/" />
+  <meta name="description" content="Free nap calculator for coffee naps, power naps, and full-cycle naps. Get a wake window so you wake up feeling sharper.">
+  
+  <meta property="og:title" content="Nap Calculator | NightOwl" />
+  <meta property="og:description" content="Choose the best nap length for a power nap, coffee nap, or full-cycle nap with a wake window that leaves you sharper." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NightOwl Sleep Calc" />
+  <meta property="og:url" content="https://nightowlsleepcalc.com/power-nap-calculator/" />
+  <meta property="og:image" content="https://nightowlsleepcalc.com/opengraph.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@nightowlsleepcalc" />
+  <meta name="twitter:title" content="Nap Calculator | NightOwl" />
+  <meta name="twitter:description" content="Choose the best nap length for a power nap, coffee nap, or full-cycle nap with a wake window that leaves you sharper." />
+  <meta name="twitter:image" content="https://nightowlsleepcalc.com/opengraph.jpg" />
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+
+  <meta name="google-adsense-account" content="ca-pub-2078168053570687">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2078168053570687"
+     crossorigin="anonymous"></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Nap Calculator: Coffee Nap, Power Nap, Full Cycle",
+      "description": "Free nap calculator for coffee naps, power naps, and full-cycle naps. Get a wake window so you wake up feeling sharper.",
+      "image": "https://nightowlsleepcalc.com/attached_assets/person_napping_1767910735118.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "NightOwl Sleep Calc"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "NightOwl Sleep Calc",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nightowlsleepcalc.com/attached_assets/NightOwl_logo2_1768776420360.png"
+        }
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2024-01-01"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is a 20-minute nap best?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Often, yes—simple and low grogginess risk for many people."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What's a coffee nap?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Coffee first, then a short nap—many people wake up more alert."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Will naps ruin my sleep?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "They can if long or late. Try earlier and shorter."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Why does NightOwl use a wake window?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A range is easier to follow and more realistic."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Should I nap if I slept badly last night?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A short nap can help, but prioritize an earlier bedtime tonight too."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can I do multiple naps?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some people can, but it may impact bedtime."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What if naps make me groggy no matter what?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Try shorter naps or a full-cycle nap, and avoid late naps."
+        }
+      }]
+    }
+  </script>
+</head>
+<body>
+  <div class="stars-container" id="starsContainer"></div>
+  
+  <nav class="top-nav">
+    <a href="/" class="nav-brand">
+      <img src="/attached_assets/NightOwl_logo2_1768776420360.png" class="nav-logo-img" alt="NightOwl Logo">
+      <span class="nav-brand-name">NightOwl</span>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">Calculator</a>
+      <a href="/sleep-calculator/" class="nav-link">Sleep Guide</a>
+      <a href="/sleep-cycle-calculator/" class="nav-link">Sleep Cycles</a>
+      <a href="/power-nap-calculator/" class="nav-link active">Nap Guide</a>
+      <a href="/jet-lag-planner/" class="nav-link">Jet Lag Guide</a>
+      <a href="/caffeine-calculator/" class="nav-link">Caffeine Guide</a>
+    </div>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </nav>
+
+  <div class="container article-container">
+    <article class="article-content">
+      <h1 class="article-title">Power Nap Calculator</h1>
+      
+      <div class="article-hero">
+        <img src="/attached_assets/person_napping_1767910735118.jpg" alt="Person taking a power nap" class="article-hero-img" />
+      </div>
+
+      <p class="article-intro">A nap calculator helps you time naps so you wake up sharper, not groggier. NightOwl's nap calculator gives you simple nap options—like a <strong>coffee nap</strong>, <strong>power nap</strong>, or <strong>full-cycle nap</strong>—and provides a wake window so you're not stuck aiming for a single minute.</p>
+
+      <div class="ad-space">
+        <div class="ad-placeholder">
+          <span class="ad-placeholder-text">Advertisement</span>
+        </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2078168053570687"
+             crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2078168053570687"
+             data-ad-slot="7830640476"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <section class="article-section">
+        <h2 class="section-title">Why naps sometimes backfire</h2>
+        <p>Naps can feel amazing, but waking from deeper sleep can cause sleep inertia—grogginess that lingers. Short naps reduce the chance of entering deep sleep. Longer naps can work better when you allow time for a full cycle.</p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Three nap types (when to use each)</h2>
+        <p><strong>Coffee nap (15 minutes):</strong> Drink coffee quickly, then nap. Many people wake up as caffeine starts to kick in.</p>
+        <p><strong>Power nap (20 minutes):</strong> A classic option that improves alertness for many people with lower grogginess risk.</p>
+        <p><strong>Full-cycle nap (90 minutes):</strong> Longer nap that can include a full sleep cycle. Useful if you have the time and want a deeper reset.</p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Example — it's 2:10 PM and you need a boost</h2>
+        <p>Assume wake window: <strong>10 minutes</strong></p>
+        <ul class="article-list">
+          <li>15-minute nap → wake around <strong>2:25 PM</strong> → window <strong>2:25–2:35</strong></li>
+          <li>20-minute nap → wake around <strong>2:30 PM</strong> → <strong>2:30–2:40</strong></li>
+          <li>90-minute nap → wake around <strong>3:40 PM</strong> → <strong>3:40–3:50</strong></li>
+        </ul>
+        <p>If you have a meeting at 3:00 PM, the 15–20 minute options are safer than the 90-minute option.</p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Timing tips that make naps work better</h2>
+        <ul class="article-list">
+          <li>Nap earlier in the day if nighttime sleep suffers</li>
+          <li>Keep short naps short</li>
+          <li>If you do a long nap, plan time to fully wake up (water, light, movement)</li>
+        </ul>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Common mistakes</h2>
+        <ol class="article-list">
+          <li><strong>Napping too late</strong> — Late naps can push bedtime later and reduce sleep pressure.</li>
+          <li><strong>Accidentally turning a power nap into a long nap</strong> — Set an alarm, and use a wake window so you can choose a time that feels doable.</li>
+          <li><strong>Expecting naps to replace real sleep</strong> — Naps help, but they're not the same as consistent nighttime sleep.</li>
+          <li><strong>Choosing 90 minutes without enough buffer</strong> — A full-cycle nap can be great, but give yourself time to wake up and reorient.</li>
+        </ol>
+      </section>
+
+      <section class="article-section faq-section">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-item">
+          <h3 class="faq-question">Is a 20-minute nap best?</h3>
+          <p>Often, yes—simple and low grogginess risk for many people.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What's a coffee nap?</h3>
+          <p>Coffee first, then a short nap—many people wake up more alert.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Will naps ruin my sleep?</h3>
+          <p>They can if long or late. Try earlier and shorter.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Why does NightOwl use a wake window?</h3>
+          <p>A range is easier to follow and more realistic.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Should I nap if I slept badly last night?</h3>
+          <p>A short nap can help, but prioritize an earlier bedtime tonight too.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I do multiple naps?</h3>
+          <p>Some people can, but it may impact bedtime.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What if naps make me groggy no matter what?</h3>
+          <p>Try shorter naps or a full-cycle nap, and avoid late naps.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is this medical advice?</h3>
+          <p>No—educational tool only.</p>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Related Pages</h2>
+        <ul class="article-list">
+          <li>General tool: <a href="/sleep-calculator/">Sleep Calculator</a></li>
+          <li>Bedtime planning: <a href="/best-time-to-go-to-bed/">Best Time to Go to Bed</a></li>
+          <li>Flexibility: <a href="/wake-window/">Wake Window</a></li>
+        </ul>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Further Reading</h2>
+        <p>For more information on napping and its benefits, explore these trusted resources:</p>
+        <ul class="article-list">
+          <li><a href="https://www.cdc.gov/sleep/index.html" target="_blank" rel="noopener">CDC – Sleep and Sleep Disorders</a></li>
+          <li><a href="https://www.nhlbi.nih.gov/health/sleep" target="_blank" rel="noopener">NIH – Your Guide to Healthy Sleep</a></li>
+          <li><a href="https://www.sleepfoundation.org/sleep-hygiene/napping" target="_blank" rel="noopener">Sleep Foundation – Napping</a></li>
+          <li><a href="https://sleepeducation.org/healthy-sleep/" target="_blank" rel="noopener">AASM – Healthy Sleep Habits</a></li>
+          <li><a href="https://www.nhs.uk/live-well/sleep-and-tiredness/" target="_blank" rel="noopener">NHS – Sleep and Tiredness</a></li>
+        </ul>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Quick nap planning guide</h2>
+        <p>If you need alertness fast, keep the nap short and set a real alarm. If you have enough time for a full cycle, make sure you also have time to wake up fully afterward so the nap actually helps your day.</p>
+        <p>Nap timing works best when you treat it as a reset, not a replacement for sleep at night.</p>
+      </section>
+
+      <div class="article-cta">
+        <a href="/?mode=nap" class="cta-button" data-testid="link-use-nap-calculator">Use the Nap Calculator Now →</a>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/about/">About</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div class="footer-copyright">&copy; <span id="year"></span> NightOwl Sleep Calc. All rights reserved.</div>
+    <div class="footer-disclaimer">Educational tool only — not medical advice.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+    
+    function createStars() {
+      const container = document.getElementById('starsContainer');
+      if (!container) return;
+      for (let i = 0; i < 100; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 3 + 's';
+        container.appendChild(star);
+      }
+    }
+    createStars();
+  </script>
+</body>
+</html>

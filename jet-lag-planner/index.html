@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Jet Lag Planner: Calculator & Guide for International Travel | NightOwl</title>
+  <link rel="canonical" href="https://nightowlsleepcalc.com/jet-lag-planner/" />
+  <meta name="description" content="Free jet lag planner to create personalized sleep schedules for international travel. Learn how to adjust to new time zones using flight times and sleep strategy.">
+  
+  <meta property="og:title" content="Jet Lag Planner | NightOwl" />
+  <meta property="og:description" content="Build a personalized jet lag plan for international travel with bedtime shifts, wake timing, and recovery guidance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NightOwl Sleep Calc" />
+  <meta property="og:url" content="https://nightowlsleepcalc.com/jet-lag-planner/" />
+  <meta property="og:image" content="https://nightowlsleepcalc.com/opengraph.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@nightowlsleepcalc" />
+  <meta name="twitter:title" content="Jet Lag Planner | NightOwl" />
+  <meta name="twitter:description" content="Build a personalized jet lag plan for international travel with bedtime shifts, wake timing, and recovery guidance." />
+  <meta name="twitter:image" content="https://nightowlsleepcalc.com/opengraph.jpg" />
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+
+  <meta name="google-adsense-account" content="ca-pub-2078168053570687">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2078168053570687"
+     crossorigin="anonymous"></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Jet Lag Planner: Calculator & Guide for International Travel",
+      "description": "Free jet lag planner to create personalized sleep schedules for international travel. Learn how to adjust to new time zones using flight times and sleep strategy.",
+      "image": "https://nightowlsleepcalc.com/attached_assets/jetlag_1768440626661.png",
+      "author": {
+        "@type": "Organization",
+        "name": "NightOwl Sleep Calc"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "NightOwl Sleep Calc",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nightowlsleepcalc.com/attached_assets/NightOwl_logo2_1768776420360.png"
+        }
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2024-01-01"
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Why does it ask if I can sleep on the plane?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you don't sleep on a red-eye flight, you arrive with massive sleep debt. We adjust your first night's bedtime earlier (e.g., 9:00 PM instead of 10:00 PM) to help you recover safely."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What if I have a layover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Add the layover as a separate flight segment. The calculator treats the journey as a whole and aligns your final sleep schedule to your ultimate destination."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Does this work for East vs. West travel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Traveling East (e.g., NY to London) is harder because you lose time. Traveling West (e.g., London to NY) is easier as you gain time. The planner accounts for arrival times to suggest the best adjustment strategy."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Should I take melatonin?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many travelers find melatonin helpful for the first few nights. However, this tool focuses on behavioral scheduling. Consult a doctor for supplement advice."
+        }
+      }]
+    }
+  </script>
+</head>
+<body>
+  <div class="stars-container" id="starsContainer"></div>
+  
+  <nav class="top-nav">
+    <a href="/" class="nav-brand">
+      <img src="/attached_assets/NightOwl_logo2_1768776420360.png" class="nav-logo-img" alt="NightOwl Logo">
+      <span class="nav-brand-name">NightOwl</span>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">Calculator</a>
+      <a href="/sleep-calculator/" class="nav-link">Sleep Guide</a>
+      <a href="/sleep-cycle-calculator/" class="nav-link">Sleep Cycles</a>
+      <a href="/power-nap-calculator/" class="nav-link">Nap Guide</a>
+      <a href="/jet-lag-planner/" class="nav-link active">Jet Lag Guide</a>
+      <a href="/caffeine-calculator/" class="nav-link">Caffeine Guide</a>
+    </div>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </nav>
+
+  <div class="container article-container">
+    <article class="article-content">
+      <h1 class="article-title">Jet Lag Planner Guide</h1>
+      
+      <div class="article-hero">
+        <img src="/attached_assets/jetlag_1768440626661.png" alt="Person sleeping on an airplane" class="article-hero-img" />
+      </div>
+
+      <p class="article-intro">Crossing time zones is exciting, but jet lag—the fatigue and confusion caused by desynchronized body clocks—is not. NightOwl's <strong>Jet Lag Planner</strong> helps you reset your internal clock faster by giving you a personalized plan for when to sleep, when to nap, and when to stay awake based on your specific flights.</p>
+
+      <p>Whether you're flying New York to London or Sydney to Los Angeles, timing your sleep correctly on the plane and on your first night is the single most effective way to beat jet lag.</p>
+
+      <div class="ad-space">
+        <div class="ad-placeholder">
+          <span class="ad-placeholder-text">Advertisement</span>
+        </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2078168053570687"
+             crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2078168053570687"
+             data-ad-slot="7830640476"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <section class="article-section">
+        <h2 class="section-title">How the Jet Lag Planner Works</h2>
+        <p>Our algorithm takes your flight itinerary and calculates a strategy to align your sleep schedule with your destination's local time.</p>
+        <ol class="article-list">
+          <li><strong>Enter your flights:</strong> Add every segment of your trip, including layovers. The calculator uses local departure and arrival times to track your journey duration.</li>
+          <li><strong>Plane Sleep:</strong> Tell us if you can sleep on the plane. If you can't, we adjust your first night's bedtime earlier to account for sleep debt.</li>
+          <li><strong>Strategy Selection:</strong> Choose between "Cycles" (focus on full sleep cycles) or "Naps" (use strategic power naps to survive arrival day).</li>
+          <li><strong>Get your plan:</strong> We generate a timeline telling you exactly when to sleep on the plane and what your goal bedtime is for the first night.</li>
+        </ol>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">How to Read Your Results</h2>
+        <p>Your personalized plan is broken down into actionable steps. Here's a quick guide to understanding the output:</p>
+        
+        <div class="result-guide-visual" style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px; margin: 20px 0;">
+          <h4 style="color: #cbd5e1; margin-bottom: 15px; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">Sample Plan Card</h4>
+          
+          <div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <div style="color: #a5b4fc; font-weight: 600; margin-bottom: 5px;">✈️ On The Plane</div>
+            <div style="font-size: 1.1em; color: white;">Try to sleep for <span style="color: #34d399;">4 hours</span></div>
+            <p style="font-size: 0.9em; color: #94a3b8; margin-top: 5px;">We calculate the optimal sleep duration to prevent sleep inertia upon arrival while banking enough rest.</p>
+          </div>
+
+          <div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <div style="color: #a5b4fc; font-weight: 600; margin-bottom: 5px;">☀️ Arrival Day</div>
+            <div style="font-size: 1.1em; color: white;">Nap Strategy Recommended</div>
+            <p style="font-size: 0.9em; color: #94a3b8; margin-top: 5px;">Based on your landing time, we'll tell you if you should power nap (20 mins) or push through to stay awake.</p>
+          </div>
+
+          <div>
+            <div style="color: #a5b4fc; font-weight: 600; margin-bottom: 5px;">🛏️ First Night</div>
+            <div style="font-size: 1.1em; color: white;">Goal Bedtime: <span style="color: #34d399;">10:00 PM</span></div>
+            <p style="font-size: 0.9em; color: #94a3b8; margin-top: 5px;">This is your target. Hitting this time anchors your circadian rhythm to the new time zone immediately.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Two Strategies: Cycles vs. Naps</h2>
+        <p>Everyone travels differently. NightOwl offers two distinct approaches:</p>
+        
+        <h3 class="inner-section-title">1. Cycle Strategy (Best for Adjusting Fast)</h3>
+        <p>This strategy prioritizes staying awake until a normal local bedtime to force your body clock to sync. It avoids naps during the day to ensure you are tired enough to sleep through the night in the new time zone.</p>
+
+        <h3 class="inner-section-title">2. Nap Strategy (Best for Survival)</h3>
+        <p>If you arrive in the morning exhausted, staying awake all day can be torture. This strategy permits a strategic <strong>20-minute Power Nap</strong>. It gives you enough energy to function without entering deep sleep, so you can still fall asleep at a reasonable hour that night.</p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Common Arrival Scenarios</h2>
+        <p>Your strategy depends heavily on when you land. Here is a cheat sheet for the three most common arrival windows:</p>
+        
+        <div class="example-grid-simple">
+          <div class="example-item">
+            <h4>🌅 Morning Arrival (6 AM – 11 AM)</h4>
+            <p><strong>Goal:</strong> Stay awake immediately.</p>
+            <p>Get sunlight as soon as possible. Sunlight stops melatonin production and tells your brain "it's morning." Avoid naps if you can; if you are exhausted, limit a nap to 20 minutes before 1 PM. Go to bed early (around 8–9 PM) local time.</p>
+          </div>
+          <div class="example-item">
+            <h4>☀️ Afternoon Arrival (12 PM – 5 PM)</h4>
+            <p><strong>Goal:</strong> Power through until evening.</p>
+            <p>This is the "danger zone" for napping. A long nap here will destroy your ability to sleep at night. Stay active—walk outside, get coffee—and push your bedtime to at least 10 PM to anchor your new rhythm.</p>
+          </div>
+          <div class="example-item">
+            <h4>🌙 Evening Arrival (6 PM – 10 PM)</h4>
+            <p><strong>Goal:</strong> Wind down immediately.</p>
+            <p>Avoid bright lights and heavy meals. Even if your body thinks it's afternoon, treat this as evening. Take a warm shower, dim the lights, and aim for bed within 2-3 hours of landing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Layover Strategy</h2>
+        <p>Layovers aren't just wasted time—they are strategic reset points. Don't just sit at the gate scrolling on your phone.</p>
+        <ul class="article-list">
+          <li><strong>Short Layover (< 2 hours):</strong> Stay active. Walk the terminal to keep blood flowing and energy up. Do not sleep.</li>
+          <li><strong>Medium Layover (2–4 hours):</strong> If it’s daytime at your final destination, stay awake. If it’s nighttime at your destination, finding a quiet corner for a nap helps align you early.</li>
+          <li><strong>Long Layover (> 4 hours):</strong> This is a prime opportunity for a "reset nap." Consider booking a sleep pod or finding a lounge. A 90-minute full-cycle nap here can replace lost sleep without the grogginess of a 45-minute nap.</li>
+        </ul>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Why NightOwl is Different</h2>
+        <p>Most jet lag advice is generic ("drink water"). NightOwl uses a specific algorithm designed for biological alignment:</p>
+        <div class="feature-block-grid">
+          <div class="feature-block">
+            <span class="feature-icon">📍</span>
+            <strong>Destination-First Timeline</strong>
+            <p>We work backward from your destination time to calculate exactly when you need to shift your schedule.</p>
+          </div>
+          <div class="feature-block">
+            <span class="feature-icon">🔄</span>
+            <strong>Cycle-Based Blocks</strong>
+            <p>We don't just say "sleep 5 hours." We recommend sleep times based on 90-minute REM cycles to prevent mid-cycle wakeups.</p>
+          </div>
+          <div class="feature-block">
+            <span class="feature-icon">🛡️</span>
+            <strong>Inertia Buffer</strong>
+            <p>Our planner includes a buffer for sleep inertia, ensuring you don't wake up groggy right when you need to navigate customs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Real-World Examples</h2>
+        <div class="example-grid-simple" style="margin-top: 20px;">
+          <div class="example-item">
+            <h4>✈️ New York (JFK) to London (LHR)</h4>
+            <p style="margin-bottom: 8px;"><strong>The Challenge:</strong> You lose 5 hours flying East. A 6 PM flight lands at 6 AM local time (which feels like 1 AM to your body).</p>
+            <p><strong>The Strategy:</strong> Sleep as much as possible on the plane. Land, get coffee and sunlight immediately. Push through the day without napping if possible, aiming for an early local bedtime (9 PM) to sync fast.</p>
+          </div>
+          <div class="example-item">
+            <h4>✈️ Tokyo (HND) to Los Angeles (LAX)</h4>
+            <p style="margin-bottom: 8px;"><strong>The Challenge:</strong> You fly "back in time," landing before you took off. It's a long day where you might be awake for 20+ hours.</p>
+            <p><strong>The Strategy:</strong> Nap Strategy is best here. Take a short 20-minute nap upon arrival to recharge, but stay awake until at least 9 PM local time to prevent waking up at 3 AM.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Top Tips for Beating Jet Lag</h2>
+        <ul class="article-list">
+          <li><strong>Hydrate aggressively:</strong> Airplane cabins are dehydrating, which worsens fatigue. Drink water throughout the flight.</li>
+          <li><strong>Set your watch early:</strong> Change your watch to the destination time as soon as you board to mentally prepare.</li>
+          <li><strong>Use light to your advantage:</strong> Get bright natural light in the morning at your destination to signal "awake" to your brain. Avoid bright screens before your new bedtime.</li>
+          <li><strong>Fight the urge to nap (too long):</strong> If you must nap, keep it under 20 minutes. Anything longer risks sleep inertia and ruined night sleep.</li>
+        </ul>
+      </section>
+
+      <section class="article-section faq-section">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-item">
+          <h3 class="faq-question">Why does it ask if I can sleep on the plane?</h3>
+          <p>If you don't sleep on a red-eye flight, you arrive with massive sleep debt. We adjust your first night's bedtime earlier (e.g., 9:00 PM instead of 10:00 PM) to help you recover safely.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What if I have a layover?</h3>
+          <p>Add the layover as a separate flight segment. The calculator treats the journey as a whole and aligns your final sleep schedule to your ultimate destination.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Does this work for East vs. West travel?</h3>
+          <p>Yes. Traveling East (e.g., NY to London) is harder because you lose time. Traveling West (e.g., London to NY) is easier as you gain time. The planner accounts for arrival times to suggest the best adjustment strategy.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Should I take melatonin?</h3>
+          <p>Many travelers find melatonin helpful for the first few nights. However, this tool focuses on behavioral scheduling. Consult a doctor for supplement advice.</p>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Related Pages</h2>
+        <ul class="article-list">
+          <li>Try the main tool: <a href="/">Sleep Calculator</a></li>
+          <li>Quick reset: <a href="/power-nap-calculator/">Nap Guide</a></li>
+          <li>Learn the basics: <a href="/sleep-calculator/">Sleep Guide</a></li>
+          <li>Sleep stage timing: <a href="/sleep-cycle-calculator/">Sleep Cycles</a></li>
+        </ul>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Quick jet lag planning guide</h2>
+        <p>Before you land, decide whether your main goal is to sleep on the plane or stay awake for destination bedtime. That one decision drives the rest of the plan.</p>
+        <p>After arrival, light, food timing, and bedtime consistency matter more than trying to do everything perfectly.</p>
+      </section>
+
+      <div class="article-cta">
+        <a href="/?mode=jetlag" class="cta-button">Start Your Jet Lag Plan →</a>
+      </div>
+    </article>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/about/">About</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div class="footer-copyright">&copy; <span id="year"></span> NightOwl Sleep Calc. All rights reserved.</div>
+    <div class="footer-disclaimer">Educational tool only — not medical advice.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (navToggle) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+    
+    // Stars background
+    function createStars() {
+      const container = document.getElementById('starsContainer');
+      if (!container) return;
+      for (let i = 0; i < 100; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 3 + 's';
+        container.appendChild(star);
+      }
+    }
+    createStars();
+  </script>
+</body>
+</html>
