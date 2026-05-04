@@ -3,24 +3,28 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
+import HomePage from "@/pages/HomePage";
+import SleepCalculatorPage from "@/pages/SleepCalculatorPage";
+import SleepCycleCalculatorPage from "@/pages/SleepCycleCalculatorPage";
+import PowerNapCalculatorPage from "@/pages/PowerNapCalculatorPage";
+import CaffeineCalculatorPage from "@/pages/CaffeineCalculatorPage";
+import JetLagPlannerPage from "@/pages/JetLagPlannerPage";
+import SleepLatencyPage from "@/pages/SleepLatencyPage";
+import WakeWindowPage from "@/pages/WakeWindowPage";
 
 const queryClient = new QueryClient();
-
-function Home() {
-  return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
-      <div className="text-center">
-        <h1 className="text-2xl font-bold text-gray-900">Replit Agent is building...</h1>
-        <p className="mt-2 text-sm text-gray-600">Your app will appear here once it's ready.</p>
-      </div>
-    </div>
-  );
-}
 
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Home} />
+      <Route path="/" component={HomePage} />
+      <Route path="/sleep-calculator" component={SleepCalculatorPage} />
+      <Route path="/sleep-cycle-calculator" component={SleepCycleCalculatorPage} />
+      <Route path="/power-nap-calculator" component={PowerNapCalculatorPage} />
+      <Route path="/caffeine-calculator" component={CaffeineCalculatorPage} />
+      <Route path="/jet-lag-planner" component={JetLagPlannerPage} />
+      <Route path="/sleep-latency" component={SleepLatencyPage} />
+      <Route path="/wake-window" component={WakeWindowPage} />
       <Route component={NotFound} />
     </Switch>
   );

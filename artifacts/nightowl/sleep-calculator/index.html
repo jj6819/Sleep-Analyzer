@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0b1220" />
-  <title>Sleep Calculator: Bedtime + Wake Times + Nap Planner | NightOwl</title>
+  <title>Sleep Calculator: Bedtime, Wake Time, Sleep Cycles &amp; Realistic Sleep Windows | NightOwl</title>
   <link rel="canonical" href="https://nightowlsleepcalc.com/sleep-calculator/" />
-  <meta name="description" content="Free sleep calculator for bedtimes and wake-up times using sleep cycles, adjustable sleep latency, a wake window, and a nap calculator.">
+  <meta name="description" content="Plan a realistic bedtime or wake-up time using sleep duration, sleep cycles, sleep latency, and a flexible wake window. Includes examples, limitations, and sleep-planning tips.">
   
   <meta property="og:title" content="Sleep Calculator | NightOwl" />
   <meta property="og:description" content="Free sleep calculator for bedtimes and wake-up times using sleep cycles, adjustable sleep latency, a wake window, and a nap calculator." />
@@ -206,6 +206,98 @@
         </ol>
       </section>
 
+      <section class="article-section">
+        <h2 class="section-title">How the calculator works: three inputs</h2>
+        <p>Every result NightOwl shows is built from three adjustable values:</p>
+        <div style="overflow-x:auto;margin:20px 0;">
+          <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+            <thead>
+              <tr style="background:rgba(165,180,252,0.15);">
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Input</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">What it does</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Default</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;"><strong>Sleep cycles</strong></td>
+                <td style="padding:10px 14px;color:#94a3b8;">How many full cycles you want to complete</td>
+                <td style="padding:10px 14px;color:#94a3b8;">5 (7.5 hours of sleep)</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;"><strong>Sleep latency</strong></td>
+                <td style="padding:10px 14px;color:#94a3b8;">Time between getting into bed and actually falling asleep</td>
+                <td style="padding:10px 14px;color:#94a3b8;">15 minutes</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 14px;color:#e2e8f0;"><strong>Wake window</strong></td>
+                <td style="padding:10px 14px;color:#94a3b8;">A flexible range around each recommended time</td>
+                <td style="padding:10px 14px;color:#94a3b8;">10 minutes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Together they turn a wake-up goal into a bedtime range you can actually follow. Adjusting any one input shifts every result shown.</p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Real bedtime examples (wake at 6:30 AM)</h2>
+        <p>Using a 15-minute latency and a 10-minute wake window:</p>
+        <div style="overflow-x:auto;margin:20px 0;">
+          <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+            <thead>
+              <tr style="background:rgba(165,180,252,0.15);">
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Cycles</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Sleep time</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">+ Latency</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Bedtime target</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Wake window</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">4 cycles</td>
+                <td style="padding:10px 14px;color:#94a3b8;">6 h 0 m</td>
+                <td style="padding:10px 14px;color:#94a3b8;">6 h 15 m</td>
+                <td style="padding:10px 14px;color:#34d399;"><strong>12:15 AM</strong></td>
+                <td style="padding:10px 14px;color:#94a3b8;">12:05–12:25 AM</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">5 cycles</td>
+                <td style="padding:10px 14px;color:#94a3b8;">7 h 30 m</td>
+                <td style="padding:10px 14px;color:#94a3b8;">7 h 45 m</td>
+                <td style="padding:10px 14px;color:#34d399;"><strong>10:45 PM</strong></td>
+                <td style="padding:10px 14px;color:#94a3b8;">10:35–10:55 PM</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 14px;color:#e2e8f0;">6 cycles</td>
+                <td style="padding:10px 14px;color:#94a3b8;">9 h 0 m</td>
+                <td style="padding:10px 14px;color:#94a3b8;">9 h 15 m</td>
+                <td style="padding:10px 14px;color:#34d399;"><strong>9:15 PM</strong></td>
+                <td style="padding:10px 14px;color:#94a3b8;">9:05–9:25 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>The 10-minute window on each side means you don't need to be in bed at an exact minute—just somewhere close.</p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Should you choose 4, 5, or 6 cycles?</h2>
+        <ul class="article-list">
+          <li><strong>4 cycles (6 hours):</strong> Use when time is genuinely short. Many people feel functional at 6 hours, but the CDC recommends most adults get at least 7 hours of sleep per night. Plan for more when you can.</li>
+          <li><strong>5 cycles (7.5 hours):</strong> A practical default for most adults. It fits a standard evening without requiring an unusually early bedtime.</li>
+          <li><strong>6 cycles (9 hours):</strong> Best if you're catching up on sleep debt or have flexibility in your schedule. Going to bed earlier is often easier said than done on a worknight.</li>
+        </ul>
+        <p>The "best" cycle count is the one you can repeat consistently. A plan you follow four nights a week is more useful than an ideal you hit once.</p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">When a calculator is not enough</h2>
+        <p>A sleep calculator works best when your sleep pressure is normal, your environment is stable, and your schedule is reasonably consistent. It's less useful when you're dealing with chronic insomnia, significant snoring or breathing disruptions during sleep, shift work disorder, or a condition affecting your circadian rhythm.</p>
+        <p>The NHLBI notes that persistent sleep problems are common and often very treatable with the right support. If you consistently can't fall asleep, stay asleep, or feel rested despite planning your bedtime carefully, that pattern is worth discussing with a healthcare provider—not just adjusting the calculator.</p>
+      </section>
+
       <section class="article-section faq-section">
         <h2 class="section-title">FAQ</h2>
         <div class="faq-item">
@@ -235,6 +327,22 @@
         <div class="faq-item">
           <h3 class="faq-question">Do naps ruin night sleep?</h3>
           <p>Late or long naps can. Keep them earlier and choose shorter options if bedtime suffers.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can the calculator tell me my ideal sleep time?</h3>
+          <p>No—it can't determine your personal sleep need. It helps you plan around a target. Your actual ideal depends on health, age, and factors a calculator can't measure.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What if my recommended bedtime keeps changing?</h3>
+          <p>That usually means your latency or wake time is inconsistent. Try stabilizing those first, then re-evaluate the results over a full week.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is 7.5 hours better than 8?</h3>
+          <p>Not automatically. 7.5 hours represents 5 full 90-minute cycles, which many people find feels smoother. But "better" depends on your individual sleep need and cycle length—not just the number.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Why does the calculator show multiple cycle options?</h3>
+          <p>Because there's no single correct answer. Different nights allow different amounts of time. Showing 4, 5, and 6 cycle options lets you choose what's realistic for tonight.</p>
         </div>
         <div class="faq-item">
           <h3 class="faq-question">Is this medical advice?</h3>
