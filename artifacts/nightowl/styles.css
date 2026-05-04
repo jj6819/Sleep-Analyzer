@@ -2101,7 +2101,8 @@ footer .footer-disclaimer {
 }
 
 .article-section a,
-.article-list a {
+.article-list a,
+.quick-answer a {
   color: #a5b4fc;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -2109,7 +2110,8 @@ footer .footer-disclaimer {
 }
 
 .article-section a:hover,
-.article-list a:hover {
+.article-list a:hover,
+.quick-answer a:hover {
   color: #c7d2fe;
 }
 
