@@ -1,0 +1,98 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "LgV7E4gsYmeK9swhY8fjr"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_sleep_schedule_wake_time.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "YHP-kgbCySMKOkkMjNTEI"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_sleep_cycles_90_minutes.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Eu1G0oNYwFnrL8MH1FCDI"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_sleep_debt_recovery.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "mLGVEBzfLQPFGwSQAJlOJ"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_caffeine_before_bed.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "MXfn0z1Wysk6L56wvyFWp"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_how_long_nap.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "RtIOX81ducFBeKXqxkKYu"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_night_shift_workers.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "UGq_jf47iffe04QLgFlbs"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_jet_lag_sleep_plan.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "puMzf98WCPr_0V3jE28Um"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_teen_sleep_schedule.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "fTtV6tH8RhLbVsbXqHvXa"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_night_owl_schedule.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "YA-xH5ARnUksozGiLrSd2"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_bedroom_setup.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "FgJYh5QoVD8vXyPXaMObo"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_morning_light_sleep.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "brwFvIlpKqrSHtQs9SrdV"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_see_doctor_sleep.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "SQEonI4ZyWNFDB0PCpLMf"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_weekend_sleep_schedule.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "fecxxEfYlwEzX-BTSlryQ"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_evening_habits_sleep.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "06mxysIIjkvV_4nKqkACg"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_sleep_tracker.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "RE55XEch1sZO2MeX_F228"
+uri = "file://artifacts/nightowl/attached_assets/generated_images/hero_sleep_planning_hub.png"
+type = "image"
+title = "generated_image"
