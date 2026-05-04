@@ -1951,6 +1951,45 @@ footer .footer-disclaimer {
   padding: 4px 8px;
 }
 
+/* ========== BREADCRUMB ========== */
+.breadcrumb-nav {
+  margin-bottom: 20px;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.breadcrumb-list li {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.breadcrumb-list li + li::before {
+  content: '/';
+  margin-right: 4px;
+  color: #475569;
+}
+
+.breadcrumb-list a {
+  color: #a5b4fc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-list a:hover {
+  color: #c7d2fe;
+  text-decoration: underline;
+}
+
 /* ========== ARTICLE PAGE STYLES ========== */
 .article-container {
   padding-top: 80px;
@@ -1968,8 +2007,54 @@ footer .footer-disclaimer {
   font-size: 32px;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   text-align: center;
+}
+
+.article-byline {
+  font-size: 12px;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.article-toc {
+  background: rgba(165, 180, 252, 0.06);
+  border: 1px solid rgba(165, 180, 252, 0.15);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin: 24px 0;
+}
+
+.article-toc h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #a5b4fc;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.article-toc ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.article-toc li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #94a3b8;
+}
+
+.article-toc a {
+  color: #a5b4fc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.article-toc a:hover {
+  color: #c7d2fe;
+  text-decoration: underline;
 }
 
 .article-hero {
@@ -2017,7 +2102,7 @@ footer .footer-disclaimer {
 
 .article-section a,
 .article-list a {
-  color: #818cf8;
+  color: #a5b4fc;
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: color 0.2s ease;
@@ -2025,7 +2110,7 @@ footer .footer-disclaimer {
 
 .article-section a:hover,
 .article-list a:hover {
-  color: #a5b4fc;
+  color: #c7d2fe;
 }
 
 .article-list {
