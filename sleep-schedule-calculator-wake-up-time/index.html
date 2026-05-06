@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Sleep Schedule Calculator by Wake-Up Time | NightOwl</title>
+  <link rel="canonical" href="https://nightowlsleepcalc.com/sleep-schedule-calculator-wake-up-time/" />
+  <meta name="description" content="Build a realistic sleep schedule from your wake-up time using sleep need, sleep latency, bedtime windows, and practical examples.">
+  <meta property="og:title" content="Sleep Schedule Calculator by Wake-Up Time | NightOwl" />
+  <meta property="og:description" content="Build a realistic sleep schedule from your wake-up time using sleep need, sleep latency, bedtime windows, and practical examples." />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="NightOwl Sleep Calc" />
+  <meta property="og:url" content="https://nightowlsleepcalc.com/sleep-schedule-calculator-wake-up-time/" />
+  <meta property="og:image" content="https://nightowlsleepcalc.com/opengraph.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@nightowlsleepcalc" />
+  <meta name="twitter:title" content="Sleep Schedule Calculator by Wake-Up Time | NightOwl" />
+  <meta name="twitter:description" content="Build a realistic sleep schedule from your wake-up time using sleep need, sleep latency, bedtime windows, and practical examples." />
+  <meta name="twitter:image" content="https://nightowlsleepcalc.com/opengraph.jpg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="google-adsense-account" content="ca-pub-2078168053570687">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2078168053570687" crossorigin="anonymous"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sleep Schedule Calculator by Wake-Up Time",
+    "description": "Build a realistic sleep schedule from your wake-up time using sleep need, sleep latency, bedtime windows, and practical examples.",
+    "author": {"@type": "Organization", "name": "NightOwl SleepCalc Editorial Team", "url": "https://nightowlsleepcalc.com/about/"},
+    "publisher": {"@type": "Organization", "name": "NightOwl SleepCalc", "url": "https://nightowlsleepcalc.com/", "logo": {"@type": "ImageObject", "url": "https://nightowlsleepcalc.com/attached_assets/NightOwl_logo2_1768776420360.png"}},
+    "datePublished": "2025-05-04",
+    "dateModified": "2025-05-04",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://nightowlsleepcalc.com/sleep-schedule-calculator-wake-up-time/"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What time should I go to bed if I wake up at 6:30 AM?", "acceptedAnswer": {"@type": "Answer", "text": "A practical bedtime is around 10:40 PM if you want 7.5 hours of sleep and usually need 20 minutes to fall asleep. For eight hours of sleep, aim for about 10:10 PM."}},
+      {"@type": "Question", "name": "Should I count the time it takes to fall asleep?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Sleep time starts when you fall asleep, not when you get into bed. Add a 10–30 minute buffer depending on your normal sleep latency."}},
+      {"@type": "Question", "name": "Is the same sleep schedule good every day?", "acceptedAnswer": {"@type": "Answer", "text": "A similar wake-up time most days usually makes sleep planning easier. Weekends can be flexible, but large shifts may make Sunday night and Monday morning harder."}}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://nightowlsleepcalc.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Sleep Planning", "item": "https://nightowlsleepcalc.com/sleep-planning/"},
+      {"@type": "ListItem", "position": 3, "name": "Sleep Schedule Calculator by Wake-Up Time", "item": "https://nightowlsleepcalc.com/sleep-schedule-calculator-wake-up-time/"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="stars-container" id="starsContainer"></div>
+
+  <nav class="top-nav">
+    <a href="/" class="nav-brand">
+      <img src="/attached_assets/NightOwl_logo2_1768776420360.png" class="nav-logo-img" alt="NightOwl Logo">
+      <span class="nav-brand-name">NightOwl</span>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">Calculator</a>
+      <a href="/sleep-calculator/" class="nav-link">Sleep Guide</a>
+      <a href="/sleep-cycle-calculator/" class="nav-link">Sleep Cycles</a>
+      <a href="/power-nap-calculator/" class="nav-link">Nap Guide</a>
+      <a href="/caffeine-calculator/" class="nav-link">Caffeine</a>
+      <a href="/sleep-planning/" class="nav-link active">Guides</a>
+    </div>
+    <button class="nav-toggle" id="navToggle">☰</button>
+  </nav>
+
+  <div class="container article-container">
+    <article class="article-content">
+
+      <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/sleep-planning/">Sleep Planning</a></li>
+          <li aria-current="page">Sleep Schedule by Wake-Up Time</li>
+        </ol>
+      </nav>
+
+      <h1 class="article-title">Sleep Schedule Calculator by Wake-Up Time</h1>
+
+      <div class="article-hero">
+        <img src="/attached_assets/generated_images/hero_sleep_schedule_wake_time.png" alt="Sleep guide illustration" class="article-hero-img" />
+      </div>
+
+      <div class="article-byline">
+        <span>By NightOwl SleepCalc Editorial Team</span> &middot; <span>Last reviewed: May 4, 2025</span>
+      </div>
+
+      <p class="article-intro">Most people plan sleep backward — they decide when they need to wake up, then hope bedtime works itself out. A better approach is to treat your wake-up time as the anchor and build your evening around it. This method works because your alarm is usually less flexible than your bedtime.</p>
+
+      <section class="quick-answer">
+        <h2>Quick answer</h2>
+        <p>To build a sleep schedule from your wake-up time, start with your fixed alarm, subtract your target sleep duration, then subtract the time it usually takes you to fall asleep. For example, if you wake at 6:30 AM, want 7.5 hours of sleep, and need 20 minutes to fall asleep, your lights-out target is about 10:40 PM.</p>
+        <ul>
+          <li><strong>Best starting point:</strong> Use your real wake-up time, not your first snooze alarm.</li>
+          <li><strong>Common mistake:</strong> Planning for sleep time without adding sleep latency.</li>
+          <li><strong>Use this calculator:</strong> <a href="/">Sleep Calculator</a> or <a href="/best-time-to-go-to-bed/">Best Time to Go to Bed Calculator</a>.</li>
+        </ul>
+      </section>
+
+      <nav class="article-toc">
+        <h2>In this guide</h2>
+        <ol>
+          <li><a href="#build-schedule">How to build a sleep schedule from your wake-up time</a></li>
+          <li><a href="#examples-table">Sleep schedule examples by wake-up time</a></li>
+          <li><a href="#how-much-sleep">How much sleep should you plan for?</a></li>
+          <li><a href="#latency">Why sleep latency changes your bedtime</a></li>
+          <li><a href="#weekends">How to keep your schedule consistent on weekends</a></li>
+          <li><a href="#not-enough">When a sleep schedule calculator is not enough</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ol>
+      </nav>
+
+
+
+      <section class="article-section" id="build-schedule">
+        <h2 class="section-title">How to build a sleep schedule from your wake-up time</h2>
+        <p>Work backward from your alarm using this simple formula:</p>
+        <div class="formula-block" style="background:rgba(165,180,252,0.1);border:1px solid rgba(165,180,252,0.3);border-radius:10px;padding:16px 20px;margin:20px 0;">
+          <strong style="color:#a5b4fc;">Bedtime target</strong> = wake-up time − target sleep duration − sleep latency<br>
+          <span style="color:#94a3b8;font-size:0.9em;">Example: 6:30 AM − 7.5 hours − 20 minutes latency = <strong style="color:#34d399;">10:40 PM</strong> lights out.</span>
+        </div>
+
+        <h3 class="inner-section-title">Step 1 — Choose your real wake-up time</h3>
+        <p>Start with the time you truly need to be out of bed. If your alarms are 6:00, 6:15, and 6:30 but you usually get up at 6:30, use 6:30 as your anchor.</p>
+
+        <h3 class="inner-section-title">Step 2 — Pick your sleep target</h3>
+        <p>Most adults should plan for at least <strong>seven hours of sleep per night</strong>, with many needing seven to nine hours depending on age, health, and recovery needs (<a href="https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html" target="_blank" rel="noopener">CDC</a>; <a href="https://www.nhlbi.nih.gov/health/sleep/how-much-sleep" target="_blank" rel="noopener">NHLBI</a>).</p>
+
+        <h3 class="inner-section-title">Step 3 — Add your fall-asleep buffer</h3>
+        <p>Many sleep calculators assume you fall asleep instantly. Real life is messier. <a href="/sleep-latency/">Estimate your sleep latency</a> and subtract it from your target bedtime. If you are unsure, start with a 20-minute buffer.</p>
+
+        <h3 class="inner-section-title">Step 4 — Create a bedtime window</h3>
+        <p>Turn the exact time into a 10–15 minute window so normal life does not break the plan. An aim of "10:35–10:55 PM" is easier to hit than "exactly 10:45 PM." Learn more about <a href="/wake-window/">wake windows</a>.</p>
+      </section>
+
+      <section class="article-section" id="examples-table">
+        <h2 class="section-title">Sleep schedule examples by wake-up time</h2>
+        <div style="overflow-x:auto;margin:20px 0;">
+          <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+            <thead>
+              <tr style="background:rgba(165,180,252,0.15);">
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Wake-up time</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">7 h + 20 min latency</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">7.5 h + 20 min latency</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">8 h + 20 min latency</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">9 h + 20 min latency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">5:30 AM</td>
+                <td style="padding:10px 14px;color:#34d399;">10:10 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">9:40 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">9:10 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">8:10 PM</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">6:00 AM</td>
+                <td style="padding:10px 14px;color:#34d399;">10:40 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">10:10 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">9:40 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">8:40 PM</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">6:30 AM</td>
+                <td style="padding:10px 14px;color:#34d399;">11:10 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">10:40 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">10:10 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">9:10 PM</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">7:00 AM</td>
+                <td style="padding:10px 14px;color:#34d399;">11:40 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">11:10 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">10:40 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">9:40 PM</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 14px;color:#e2e8f0;">7:30 AM</td>
+                <td style="padding:10px 14px;color:#34d399;">12:10 AM</td>
+                <td style="padding:10px 14px;color:#34d399;">11:40 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">11:10 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">10:10 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="color:#94a3b8;font-size:0.85em;">All times are lights-out targets. Adjust latency for your own sleep onset time.</p>
+      </section>
+
+      <section class="article-section" id="how-much-sleep">
+        <h2 class="section-title">How much sleep should you plan for?</h2>
+        <p>A schedule only helps if you can follow it. Instead of jumping from five hours to nine hours overnight, pick a target that is both healthier and realistic.</p>
+        <div style="overflow-x:auto;margin:20px 0;">
+          <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+            <thead>
+              <tr style="background:rgba(165,180,252,0.15);">
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Goal</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Time asleep</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Best for</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Minimum recovery</td>
+                <td style="padding:10px 14px;color:#94a3b8;">7 hours</td>
+                <td style="padding:10px 14px;color:#94a3b8;">Busy weekdays</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Balanced target</td>
+                <td style="padding:10px 14px;color:#94a3b8;">7.5–8 hours</td>
+                <td style="padding:10px 14px;color:#94a3b8;">Most routine nights</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 14px;color:#e2e8f0;">Catch-up night</td>
+                <td style="padding:10px 14px;color:#94a3b8;">8.5–9 hours</td>
+                <td style="padding:10px 14px;color:#94a3b8;">After several short nights</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="article-section" id="latency">
+        <h2 class="section-title">Why sleep latency changes your bedtime</h2>
+        <p>If you want 7.5 hours asleep but your latency is 25 minutes, your bedtime should be 25 minutes earlier than a cycles-only plan. People often think they "slept 8 hours" because they were in bed for 8 hours, but a chunk of that time may not be actual sleep.</p>
+        <p>If you take 20 minutes to fall asleep and your target is 11:00 PM "asleep," your real lights-out time is 10:40 PM. <a href="/sleep-latency/">Estimate your sleep latency</a> once and use it every night.</p>
+      </section>
+
+      <section class="article-section" id="weekends">
+        <h2 class="section-title">How to keep your schedule consistent on weekends</h2>
+        <p>A common mistake is using weekends to erase weekday sleep debt by sleeping until late morning. A better rule: <a href="/weekend-sleep-schedule/">keep weekends from shifting your schedule</a> by staying within one to two hours of your weekday wake-up time. If you need more recovery, add an earlier bedtime Friday night or a short Saturday nap instead of pushing your wake time far.</p>
+      </section>
+
+      <section class="article-section" id="not-enough">
+        <h2 class="section-title">When a sleep schedule calculator is not enough</h2>
+        <p>If you still wake up exhausted after enough time in bed, or if you often snore, gasp, or feel dangerously sleepy during the day, a calculator cannot fix that. Learn <a href="/when-to-see-a-doctor-for-sleep-problems/">when timing tools are not enough</a> and when to seek professional guidance.</p>
+      </section>
+
+      <div class="article-cta">
+        <a href="/" class="cta-button"><a href="/" class="cta-button">Calculate your bedtime from a wake-up time →</a></a>
+      </div>
+
+      <section class="article-section faq-section" id="faq">
+        <h2 class="section-title">FAQs</h2>
+        <div class="faq-item">
+          <h3 class="faq-question">What time should I go to bed if I wake up at 6:30 AM?</h3>
+          <p>A practical bedtime is around 10:40 PM if you want 7.5 hours of sleep and usually need 20 minutes to fall asleep. For eight hours of sleep, aim for about 10:10 PM.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Should I count the time it takes to fall asleep?</h3>
+          <p>Yes. Sleep time starts when you fall asleep, not when you get into bed. Add a 10–30 minute buffer depending on your normal sleep latency.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Is the same sleep schedule good every day?</h3>
+          <p>A similar wake-up time most days usually makes sleep planning easier. Weekends can be flexible, but large shifts may make Sunday night and Monday morning harder.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">How long should I try a schedule before changing it?</h3>
+          <p>Try a schedule for one full week before judging it. One bad night does not mean the schedule failed. Look for trends: easier wake-ups, fewer snoozes, less afternoon sleepiness.</p>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Sources</h2>
+        <ul class="article-list">
+          <li><a href="https://www.cdc.gov/sleep/about_sleep/how_much_sleep.html" target="_blank" rel="noopener">CDC — How Much Sleep Do I Need?</a></li>
+          <li><a href="https://www.nhlbi.nih.gov/health/sleep/how-much-sleep" target="_blank" rel="noopener">NHLBI — How Much Sleep Is Enough?</a></li>
+          <li><a href="https://www.sleepfoundation.org/how-sleep-works/sleep-latency" target="_blank" rel="noopener">Sleep Foundation — Sleep Latency</a></li>
+        </ul>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Related articles &amp; calculators</h2>
+        <ul class="article-list">
+          <li><a href="/sleep-calculator/">Sleep Calculator</a> — calculate your bedtime from a wake-up time</li>
+          <li><a href="/sleep-latency/">Sleep Latency</a> — estimate your fall-asleep time</li>
+          <li><a href="/are-sleep-cycles-always-90-minutes/">Are Sleep Cycles Always 90 Minutes?</a></li>
+          <li><a href="/weekend-sleep-schedule/">Weekend Sleep Schedule</a> — keep weekends from shifting your schedule</li>
+          <li><a href="/when-to-see-a-doctor-for-sleep-problems/">When to See a Doctor for Sleep Problems</a></li>
+          <li><a href="/sleep-planning/">All Sleep Planning Guides →</a></li>
+        </ul>
+      </section>
+
+      <div class="educational-disclaimer">
+        <p><strong>Educational use only.</strong> This article is for general sleep-planning education and is not medical advice. If you have persistent sleep problems, consult a qualified healthcare professional.</p>
+      </div>
+
+    </article>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="/about/">About</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div class="footer-copyright">&copy; <span id="year"></span> NightOwl Sleep Calc. All rights reserved.</div>
+    <div class="footer-disclaimer">Educational tool only — not medical advice.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (navToggle) navToggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    function createStars() {
+      const container = document.getElementById('starsContainer');
+      if (!container) return;
+      for (let i = 0; i < 100; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 3 + 's';
+        container.appendChild(star);
+      }
+    }
+    createStars();
+  </script>
+</body>
+</html>
