@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0b1220" />
-  <title>Sleep Latency: What It Is + How to Set It | NightOwl</title>
+  <title>Sleep Latency: How Long It Takes to Fall Asleep &amp; How to Use It | NightOwl</title>
   <link rel="canonical" href="https://nightowlsleepcalc.com/sleep-latency/" />
-  <meta name="description" content="Sleep latency is how long it takes to fall asleep. Learn typical ranges and how adjusting latency improves bedtime and wake time calculations.">
+  <meta name="description" content="Learn what sleep latency means, how to estimate your fall-asleep time, how it affects sleep calculators, and what to do when latency is too short or too long.">
   
   <meta property="og:title" content="Sleep Latency | NightOwl" />
   <meta property="og:description" content="Sleep latency is how long it takes to fall asleep. Learn typical ranges and how adjusting latency improves bedtime and wake time calculations." />
@@ -69,6 +69,7 @@
       <a href="/power-nap-calculator/" class="nav-link">Nap Calculator</a>
       <a href="/jet-lag-planner/" class="nav-link">Jet Lag Guide</a>
       <a href="/caffeine-calculator/" class="nav-link">Caffeine Guide</a>
+      <a href="/sleep-planning/" class="nav-link">Guides</a>
     </div>
     <button class="nav-toggle" id="navToggle">☰</button>
   </nav>
@@ -141,6 +142,139 @@
         </ol>
       </section>
 
+      <section class="article-section">
+        <h2 class="section-title">Track your latency over a few nights</h2>
+        <p>The simplest approach: keep a rough sleep log for 3–5 nights. You don't need to be precise—just close enough to find a realistic average.</p>
+        <div style="overflow-x:auto;margin:20px 0;">
+          <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+            <thead>
+              <tr style="background:rgba(165,180,252,0.15);">
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Night</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Lights out</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Estimated sleep onset</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Latency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Mon</td>
+                <td style="padding:10px 14px;color:#94a3b8;">11:00 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">11:18 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">~18 min</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Tue</td>
+                <td style="padding:10px 14px;color:#94a3b8;">11:15 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">11:40 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">~25 min</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Wed</td>
+                <td style="padding:10px 14px;color:#94a3b8;">11:00 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">11:12 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">~12 min</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Thu</td>
+                <td style="padding:10px 14px;color:#94a3b8;">10:45 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">11:10 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">~25 min</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Fri</td>
+                <td style="padding:10px 14px;color:#94a3b8;">11:30 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">11:42 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">~12 min</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 14px;color:#e2e8f0;"><strong>Average</strong></td>
+                <td style="padding:10px 14px;color:#94a3b8;">—</td>
+                <td style="padding:10px 14px;color:#94a3b8;">—</td>
+                <td style="padding:10px 14px;color:#34d399;"><strong>~18 min → set to 20</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Pick a realistic average, not your best night. Rounding up slightly is fine—it just means you give yourself a little extra buffer before cycles start.</p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">How to set your latency in NightOwl</h2>
+        <div style="overflow-x:auto;margin:20px 0;">
+          <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+            <thead>
+              <tr style="background:rgba(165,180,252,0.15);">
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">If you…</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Set latency to…</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Fall asleep quickly (under 10 min consistently)</td>
+                <td style="padding:10px 14px;color:#94a3b8;">5–10 min</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Usually fall asleep in 10–20 minutes</td>
+                <td style="padding:10px 14px;color:#94a3b8;">15 min (default)</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Take 20–30 minutes regularly</td>
+                <td style="padding:10px 14px;color:#94a3b8;">25–30 min</td>
+              </tr>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">Often lie awake 30+ minutes</td>
+                <td style="padding:10px 14px;color:#94a3b8;">30–45 min (and consider reviewing sleep habits)</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 14px;color:#e2e8f0;">Don't know your usual time</td>
+                <td style="padding:10px 14px;color:#94a3b8;">Start at 15 min, adjust after one week</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Example: how latency shifts your bedtime</h2>
+        <p>Using a 7:00 AM wake time, 90-minute cycles, and 10-minute wake window:</p>
+        <div style="overflow-x:auto;margin:20px 0;">
+          <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+            <thead>
+              <tr style="background:rgba(165,180,252,0.15);">
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Cycles</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Sleep needed</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">+ 10 min latency</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">+ 30 min latency</th>
+                <th style="padding:10px 14px;text-align:left;color:#a5b4fc;border-bottom:1px solid rgba(255,255,255,0.1);">Difference</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid rgba(255,255,255,0.07);">
+                <td style="padding:10px 14px;color:#e2e8f0;">5</td>
+                <td style="padding:10px 14px;color:#94a3b8;">7 h 30 m</td>
+                <td style="padding:10px 14px;color:#34d399;">11:20 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">11:00 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">20 min earlier</td>
+              </tr>
+              <tr>
+                <td style="padding:10px 14px;color:#e2e8f0;">6</td>
+                <td style="padding:10px 14px;color:#94a3b8;">9 h 0 m</td>
+                <td style="padding:10px 14px;color:#34d399;">9:50 PM</td>
+                <td style="padding:10px 14px;color:#34d399;">9:30 PM</td>
+                <td style="padding:10px 14px;color:#94a3b8;">20 min earlier</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>A 20-minute difference per night adds up to more than 2 hours of miscalculated sleep timing over a week—which is why getting latency roughly right matters more than perfecting cycle length.</p>
+      </section>
+
+      <section class="article-section">
+        <h2 class="section-title">Short vs. long latency: what each can indicate</h2>
+        <p>If your latency is consistently <strong>under 5 minutes</strong>, that can be a sign of significant sleep pressure—meaning you may be undersleeping overall. The NHLBI notes that falling asleep almost immediately upon lying down is sometimes a sign of insufficient sleep rather than excellent sleep efficiency.</p>
+        <p>On the other end, latency consistently <strong>over 30–45 minutes</strong> most nights is worth paying attention to. It's common during stressful periods and often resolves with routine adjustments. If it's chronic, behavioral approaches like Cognitive Behavioral Therapy for Insomnia (CBT-I) have a strong evidence base—a clinician can help you determine whether that's appropriate.</p>
+      </section>
+
       <section class="article-section faq-section">
         <h2 class="section-title">FAQ</h2>
         <div class="faq-item">
@@ -170,6 +304,18 @@
         <div class="faq-item">
           <h3 class="faq-question">What if I fall asleep fast but still wake up groggy?</h3>
           <p>Try a different cycle option and consider wake time consistency.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">My latency is under 5 minutes—is that good?</h3>
+          <p>Very short latency can actually indicate you're carrying significant sleep debt. Falling asleep almost immediately feels like efficiency, but the NHLBI notes it can be a sign you need more sleep overall—not that you're especially good at sleeping.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Will improving sleep hygiene always fix long latency?</h3>
+          <p>Not always. Behavioral changes help many people, but chronic difficulty falling asleep—especially if it's frustrating and persistent—is worth discussing with a healthcare provider rather than only self-managing through habit changes.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Should I track latency differently on weekends?</h3>
+          <p>You can, but using a consistent estimate for all nights is usually simpler and more reliable. If your weekend latency is very different from your weekday latency, that gap itself may be worth paying attention to.</p>
         </div>
         <div class="faq-item">
           <h3 class="faq-question">Is this medical advice?</h3>
