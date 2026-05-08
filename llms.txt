@@ -1,0 +1,34 @@
+# NightOwl Sleep Calc
+
+> Free sleep cycle calculator and sleep planning guides for nightowlsleepcalc.com. Helps people choose realistic bedtimes and wake-up times based on 90-minute sleep cycles, sleep latency, and wake windows.
+
+## Calculators
+
+- [Sleep Cycle Calculator](https://nightowlsleepcalc.com/): Calculate optimal bedtimes or wake-up times based on 90-minute sleep cycles and personal sleep latency.
+- [Sleep Guide](https://nightowlsleepcalc.com/sleep-calculator/): Explanation of how sleep cycles work and how to use the calculator effectively.
+- [Sleep Cycle Calculator Guide](https://nightowlsleepcalc.com/sleep-cycle-calculator/): Deep dive into sleep cycle stages and what it means to wake mid-cycle.
+- [Best Time to Go to Bed](https://nightowlsleepcalc.com/best-time-to-go-to-bed/): Calculate the best bedtime based on a target wake-up time.
+- [Power Nap Calculator](https://nightowlsleepcalc.com/power-nap-calculator/): Choose between 10, 20, or 90-minute naps based on your goal.
+- [Jet Lag Planner](https://nightowlsleepcalc.com/jet-lag-planner/): Day-by-day light, sleep, and meal plan to recover from jet lag faster.
+- [Caffeine Cutoff Calculator](https://nightowlsleepcalc.com/caffeine-calculator/): Find your last safe coffee time so caffeine doesn't delay sleep.
+- [Sleep Latency Calculator](https://nightowlsleepcalc.com/sleep-latency/): Estimate how long you take to fall asleep and adjust your bedtime accordingly.
+- [Wake Window Calculator](https://nightowlsleepcalc.com/wake-window/): Plan awake time between sleeps based on sleep pressure and timing.
+
+## Sleep Planning Guides
+
+- [Sleep Planning Hub](https://nightowlsleepcalc.com/sleep-planning/): Central hub linking all sleep planning guides organized by topic cluster.
+- [Sleep Schedule & Wake-Up Time](https://nightowlsleepcalc.com/sleep-schedule-calculator-wake-up-time/): How to build a bedtime backwards from your alarm, with a sleep duration table and weekend rules.
+- [Are Sleep Cycles Always 90 Minutes?](https://nightowlsleepcalc.com/are-sleep-cycles-always-90-minutes/): Why the 90-minute rule is a useful starting point and how individual cycles vary from 70–120 minutes.
+- [How to Recover from Sleep Debt](https://nightowlsleepcalc.com/how-to-recover-from-sleep-debt/): Gradual recovery strategies using earlier bedtimes, naps, and weekend limits.
+- [When to Stop Drinking Caffeine Before Bed](https://nightowlsleepcalc.com/when-to-stop-drinking-caffeine-before-bed/): Cutoff table by bedtime and sensitivity, plus hidden caffeine sources.
+- [How Long Should I Nap?](https://nightowlsleepcalc.com/how-long-should-i-nap/): Comparison of 20-minute, 30-minute, and 90-minute naps and which length fits each situation.
+- [Sleep Schedule for Night Shift Workers](https://nightowlsleepcalc.com/sleep-schedule-for-night-shift-workers/): Anchor sleep, light control, caffeine timing, and days-off transitions for shift workers.
+- [Jet Lag Sleep Plan](https://nightowlsleepcalc.com/jet-lag-sleep-plan/): Destination-time strategy, eastbound vs. westbound tips, and what to do before, during, and after travel.
+- [Teen Sleep Schedule for School Mornings](https://nightowlsleepcalc.com/teen-sleep-schedule-school/): Realistic bedtime examples, homework cutoffs, screen limits, and weekend catch-up tips for teens.
+- [Night Owl Sleep Schedule](https://nightowlsleepcalc.com/night-owl-sleep-schedule/): How night owls and chronotype-late people can plan better sleep with wake-time anchors and light exposure.
+- [Bedroom Setup for Better Sleep](https://nightowlsleepcalc.com/bedroom-setup-for-better-sleep/): Practical checklist for light, noise, temperature, and phone rules with a 10-minute reset plan.
+- [Morning Light for Sleep](https://nightowlsleepcalc.com/morning-light-for-sleep/): How morning sunlight exposure anchors your circadian rhythm and improves sleep timing.
+- [When to See a Doctor for Sleep Problems](https://nightowlsleepcalc.com/when-to-see-a-doctor-for-sleep-problems/): Warning signs that go beyond a schedule fix: snoring, gasping, drowsy driving, persistent insomnia.
+- [Weekend Sleep Schedule](https://nightowlsleepcalc.com/weekend-sleep-schedule/): How to recover sleep on weekends without shifting your body clock so far that Monday becomes harder.
+- [Evening Habits That Affect Sleep](https://nightowlsleepcalc.com/evening-habits-that-affect-sleep/): Dinner timing, alcohol, late workouts, and bright screens — what to change and when.
+- [How to Use a Sleep Tracker](https://nightowlsleepcalc.com/how-to-use-a-sleep-tracker/): Use your wearable for weekly pattern analysis without obsessing over daily scores.
