@@ -2083,6 +2083,7 @@ footer .footer-disclaimer {
 .article-section {
   margin-top: 32px;
   margin-bottom: 32px;
+  scroll-margin-top: 72px;
 }
 
 .section-title {
