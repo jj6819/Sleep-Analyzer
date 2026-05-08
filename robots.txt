@@ -1,4 +1,105 @@
+# robots.txt — nightowlsleepcalc.com
+# Last updated: 2025-05-08
+
+# -------------------------------------------------------
+# STANDARD SEARCH ENGINES
+# -------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# -------------------------------------------------------
+# AI CRAWLERS — EXPLICITLY ALLOWED
+# -------------------------------------------------------
+
+# Google AI (Gemini, AI Overviews, NotebookLM)
+User-agent: Google-Extended
+Allow: /
+
+# OpenAI (ChatGPT Browse, GPT plugins, SearchGPT)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Anthropic (Claude training + web tool)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI (Llama crawl)
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# xAI / Grok
+User-agent: Grok
+Allow: /
+
+# Apple (Siri, Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon (Alexa, Rufus)
+User-agent: Amazonbot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Common Crawl (base dataset for many LLMs)
+User-agent: CCBot
+Allow: /
+
+# Diffbot (used by multiple AI training pipelines)
+User-agent: Diffbot
+Allow: /
+
+# Bytedance / TikTok AI
+User-agent: Bytespider
+Allow: /
+
+# -------------------------------------------------------
+# GLOBAL DEFAULT — allow everything not listed above
+# -------------------------------------------------------
+
 User-agent: *
 Allow: /
+
+# -------------------------------------------------------
+# SITEMAPS
+# -------------------------------------------------------
 
 Sitemap: https://nightowlsleepcalc.com/sitemap.xml
