@@ -1,5 +1,5 @@
 # robots.txt — nightowlsleepcalc.com
-# Last updated: 2025-05-08
+# Last updated: 2026-05-17
 
 # -------------------------------------------------------
 # STANDARD SEARCH ENGINES
@@ -31,14 +31,14 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# OpenAI (ChatGPT Browse, GPT plugins, SearchGPT)
+# OpenAI (ChatGPT Browse, SearchGPT, GPT plugins)
 User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: GPTBot
 Allow: /
 
-# Anthropic (Claude training + web tool)
+# Anthropic (Claude web tool + training)
 User-agent: ClaudeBot
 Allow: /
 
@@ -79,6 +79,18 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
+# Allen Institute for AI (Semantic Scholar)
+User-agent: Ai2Bot
+Allow: /
+
+# Mistral AI
+User-agent: MistralBot
+Allow: /
+
+# Brave Search AI
+User-agent: Brave-Search
+Allow: /
+
 # Common Crawl (base dataset for many LLMs)
 User-agent: CCBot
 Allow: /
@@ -91,6 +103,14 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
+# FriendlyCrawler (AI training)
+User-agent: FriendlyCrawler
+Allow: /
+
+# Magpie Crawler (AI training)
+User-agent: Magpie-Crawler
+Allow: /
+
 # -------------------------------------------------------
 # GLOBAL DEFAULT — allow everything not listed above
 # -------------------------------------------------------
@@ -99,7 +119,7 @@ User-agent: *
 Allow: /
 
 # -------------------------------------------------------
-# SITEMAPS
+# SITEMAPS & LLM DISCOVERY
 # -------------------------------------------------------
 
 Sitemap: https://nightowlsleepcalc.com/sitemap.xml

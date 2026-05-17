@@ -1,24 +1,24 @@
-# NightOwl Sleep Calc
+# NightOwl SleepCalc
 
-> Free sleep cycle calculator and sleep planning guides for nightowlsleepcalc.com. Helps people choose realistic bedtimes and wake-up times based on 90-minute sleep cycles, sleep latency, and wake windows.
+> Free sleep calculators and evidence-informed sleep planning guides at nightowlsleepcalc.com. Helps people plan realistic bedtimes, wake-up times, naps, caffeine cutoffs, and jet lag recovery schedules. Content is educational planning only — not medical advice. Sources: CDC, NHLBI.
 
 ## Calculators
 
-- [Sleep Cycle Calculator](https://nightowlsleepcalc.com/): Calculate optimal bedtimes or wake-up times based on 90-minute sleep cycles and personal sleep latency.
-- [Sleep Guide](https://nightowlsleepcalc.com/sleep-calculator/): Explanation of how sleep cycles work and how to use the calculator effectively.
-- [Sleep Cycle Calculator Guide](https://nightowlsleepcalc.com/sleep-cycle-calculator/): Deep dive into sleep cycle stages and what it means to wake mid-cycle.
-- [Best Time to Go to Bed](https://nightowlsleepcalc.com/best-time-to-go-to-bed/): Calculate the best bedtime based on a target wake-up time.
-- [Power Nap Calculator](https://nightowlsleepcalc.com/power-nap-calculator/): Choose between 10, 20, or 90-minute naps based on your goal.
-- [Jet Lag Planner](https://nightowlsleepcalc.com/jet-lag-planner/): Day-by-day light, sleep, and meal plan to recover from jet lag faster.
-- [Caffeine Cutoff Calculator](https://nightowlsleepcalc.com/caffeine-calculator/): Find your last safe coffee time so caffeine doesn't delay sleep.
-- [Sleep Latency Calculator](https://nightowlsleepcalc.com/sleep-latency/): Estimate how long you take to fall asleep and adjust your bedtime accordingly.
-- [Wake Window Calculator](https://nightowlsleepcalc.com/wake-window/): Plan awake time between sleeps based on sleep pressure and timing.
+- [NightOwl SleepCalc — Homepage](https://nightowlsleepcalc.com/): Full suite of sleep planning tools — bedtime calculator, sleep cycle calculator, nap timer, caffeine cutoff, and jet lag planner. Includes a calculator directory, sleep planning guides directory, and NHLBI/CDC-cited intro content.
+- [Sleep Calculator](https://nightowlsleepcalc.com/sleep-calculator/): Calculate bedtime from a wake-up time or wake-up time from a bedtime, using sleep latency and 90-minute cycle estimates. Includes CDC sleep duration recommendations.
+- [Sleep Cycle Calculator](https://nightowlsleepcalc.com/sleep-cycle-calculator/): Compare 4, 5, and 6 estimated sleep cycles to find a wake-up window. Explains why cycles vary from 70–120 minutes per NHLBI.
+- [Best Time to Go to Bed](https://nightowlsleepcalc.com/best-time-to-go-to-bed/): Recommended bedtime ranges based on target wake-up time and age group.
+- [Power Nap Calculator](https://nightowlsleepcalc.com/power-nap-calculator/): Choose between coffee nap (15 min), power nap (20 min), or full-cycle nap (90 min) based on your goal. Includes CDC/NIOSH napping guidance.
+- [Jet Lag Planner](https://nightowlsleepcalc.com/jet-lag-planner/): Day-by-day sleep schedule for crossing time zones. Covers light exposure, melatonin timing, and strategic naps. Cites CDC Travelers' Health.
+- [Caffeine Calculator](https://nightowlsleepcalc.com/caffeine-calculator/): Find the latest safe coffee time based on caffeine half-life and bedtime. References FDA 400mg/day recommendation.
+- [Sleep Latency Guide](https://nightowlsleepcalc.com/sleep-latency/): Explains normal sleep onset time, what affects it, and how to adjust bedtime planning.
+- [Wake Window Guide](https://nightowlsleepcalc.com/wake-window/): Ideal time awake between naps and nighttime sleep by age and situation.
 
 ## Sleep Planning Guides
 
 - [Sleep Planning Hub](https://nightowlsleepcalc.com/sleep-planning/): Central hub linking all sleep planning guides organized by topic cluster.
 - [Sleep Schedule & Wake-Up Time](https://nightowlsleepcalc.com/sleep-schedule-calculator-wake-up-time/): How to build a bedtime backwards from your alarm, with a sleep duration table and weekend rules.
-- [Are Sleep Cycles Always 90 Minutes?](https://nightowlsleepcalc.com/are-sleep-cycles-always-90-minutes/): Why the 90-minute rule is a useful starting point and how individual cycles vary from 70–120 minutes.
+- [Are Sleep Cycles Always 90 Minutes?](https://nightowlsleepcalc.com/are-sleep-cycles-always-90-minutes/): Why the 90-minute rule is a useful estimate and how individual cycles vary from 70–120 minutes.
 - [How to Recover from Sleep Debt](https://nightowlsleepcalc.com/how-to-recover-from-sleep-debt/): Gradual recovery strategies using earlier bedtimes, naps, and weekend limits.
 - [When to Stop Drinking Caffeine Before Bed](https://nightowlsleepcalc.com/when-to-stop-drinking-caffeine-before-bed/): Cutoff table by bedtime and sensitivity, plus hidden caffeine sources.
 - [How Long Should I Nap?](https://nightowlsleepcalc.com/how-long-should-i-nap/): Comparison of 20-minute, 30-minute, and 90-minute naps and which length fits each situation.
@@ -32,3 +32,7 @@
 - [Weekend Sleep Schedule](https://nightowlsleepcalc.com/weekend-sleep-schedule/): How to recover sleep on weekends without shifting your body clock so far that Monday becomes harder.
 - [Evening Habits That Affect Sleep](https://nightowlsleepcalc.com/evening-habits-that-affect-sleep/): Dinner timing, alcohol, late workouts, and bright screens — what to change and when.
 - [How to Use a Sleep Tracker](https://nightowlsleepcalc.com/how-to-use-a-sleep-tracker/): Use your wearable for weekly pattern analysis without obsessing over daily scores.
+
+## Editorial Standards
+
+Content is written by the NightOwl SleepCalc Editorial Team and reviewed May 2026. All pages cite primary sources (CDC, NHLBI, FDA) where applicable. NightOwl SleepCalc is an educational planning resource — not a medical device or diagnostic tool.
