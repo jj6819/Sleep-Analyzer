@@ -161,8 +161,14 @@
 
   <!-- Site pages -->
   <url>
+    <loc>https://nightowlsleepcalc.com/editorial-policy/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://nightowlsleepcalc.com/about/</loc>
-    <lastmod>2026-01-10</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
